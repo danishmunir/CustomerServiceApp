@@ -11,12 +11,16 @@ import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+    var window: UIWindow?
   
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyBXfR7Zu7mvhxO4aydatsUY-VUH-_NG15g")
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // Or "Admin"
+        window!.rootViewController = UIStoryboard(name: "Account", bundle: nil).instantiateInitialViewController()!
+        window!.makeKeyAndVisible()
         return true
     }
     

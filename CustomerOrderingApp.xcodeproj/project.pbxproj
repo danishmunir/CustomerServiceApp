@@ -44,8 +44,22 @@
 		CEE0A46F251E0D0A00D9DAF9 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A46E251E0D0A00D9DAF9 /* RegisterTableViewController.swift */; };
 		CEE0A472251E18B000D9DAF9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A471251E18B000D9DAF9 /* String.swift */; };
 		CEE0A475251E72C300D9DAF9 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0A474251E72C300D9DAF9 /* LoginTableViewController.swift */; };
+		F7192363252B000F0098EFFB /* AddDiscountCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7192362252B000F0098EFFB /* AddDiscountCodeTableViewController.swift */; };
+		F719236C252B05D20098EFFB /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F719236B252B05D20098EFFB /* OrdersViewController.swift */; };
+		F7192373252B06CF0098EFFB /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7192371252B06CF0098EFFB /* OrdersTableViewCell.swift */; };
+		F7192374252B06CF0098EFFB /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7192372252B06CF0098EFFB /* OrdersTableViewCell.xib */; };
+		F71923B0252B11490098EFFB /* OrderNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71923AF252B11490098EFFB /* OrderNumberViewController.swift */; };
+		F71923C3252B17CA0098EFFB /* EstimatedArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71923C1252B17CA0098EFFB /* EstimatedArrivalTableViewCell.swift */; };
+		F71923C4252B17CA0098EFFB /* EstimatedArrivalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71923C2252B17CA0098EFFB /* EstimatedArrivalTableViewCell.xib */; };
+		F71923C8252B19F80098EFFB /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71923C7252B19F80098EFFB /* UIView.swift */; };
+		F720B152252A5CCB00FC7861 /* NotesForDeliveryCourierTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720B151252A5CCB00FC7861 /* NotesForDeliveryCourierTableViewController.swift */; };
 		F730D4782528B56F001505C5 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730D4772528B56F001505C5 /* AboutTableViewController.swift */; };
 		F730D4892528C3B8001505C5 /* NotesForBuisnessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730D4882528C3B8001505C5 /* NotesForBuisnessTableViewController.swift */; };
+		F741E219252B4C37001BF82C /* OrderNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E217252B4C37001BF82C /* OrderNumberTableViewCell.swift */; };
+		F741E21A252B4C37001BF82C /* OrderNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F741E218252B4C37001BF82C /* OrderNumberTableViewCell.xib */; };
+		F741E22D252B4E4D001BF82C /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E22B252B4E4D001BF82C /* OrderListTableViewCell.swift */; };
+		F741E22E252B4E4D001BF82C /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */; };
+		F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E26D252B566E001BF82C /* RiderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,8 +104,23 @@
 		CEE0A474251E72C300D9DAF9 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		E20D9DD4AE2D5DAA57A84A62 /* Pods-CustomerOrderingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerOrderingApp.release.xcconfig"; path = "Target Support Files/Pods-CustomerOrderingApp/Pods-CustomerOrderingApp.release.xcconfig"; sourceTree = "<group>"; };
 		F134BE55028578FE6FAADC77 /* Pods-CustomerOrderingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerOrderingApp.debug.xcconfig"; path = "Target Support Files/Pods-CustomerOrderingApp/Pods-CustomerOrderingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F7192362252B000F0098EFFB /* AddDiscountCodeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiscountCodeTableViewController.swift; sourceTree = "<group>"; };
+		F719236B252B05D20098EFFB /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		F7192371252B06CF0098EFFB /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		F7192372252B06CF0098EFFB /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
+		F71923AF252B11490098EFFB /* OrderNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNumberViewController.swift; sourceTree = "<group>"; };
+		F71923C1252B17CA0098EFFB /* EstimatedArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedArrivalTableViewCell.swift; sourceTree = "<group>"; };
+		F71923C2252B17CA0098EFFB /* EstimatedArrivalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EstimatedArrivalTableViewCell.xib; sourceTree = "<group>"; };
+		F71923C7252B19F80098EFFB /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F720B151252A5CCB00FC7861 /* NotesForDeliveryCourierTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesForDeliveryCourierTableViewController.swift; sourceTree = "<group>"; };
 		F730D4772528B56F001505C5 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		F730D4882528C3B8001505C5 /* NotesForBuisnessTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesForBuisnessTableViewController.swift; sourceTree = "<group>"; };
+		F741E217252B4C37001BF82C /* OrderNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNumberTableViewCell.swift; sourceTree = "<group>"; };
+		F741E218252B4C37001BF82C /* OrderNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderNumberTableViewCell.xib; sourceTree = "<group>"; };
+		F741E22B252B4E4D001BF82C /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
+		F741E26D252B566E001BF82C /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
+		F7B837AB252B36A5007B9B88 /* CustomerOrderingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomerOrderingApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +199,11 @@
 		CE4186962523336D00E68F0E /* AccountStoryBoard VC */ = {
 			isa = PBXGroup;
 			children = (
+				F741E26C252B5659001BF82C /* Rider VC */,
+				F71923AE252B11310098EFFB /* Order No  */,
+				F719236A252B05BF0098EFFB /* Orders */,
+				F7192361252AFFF40098EFFB /* Add Discount Code */,
+				F720B150252A5C9C00FC7861 /* Notes for delievery Courier */,
 				F730D4872528C38E001505C5 /* Notes for Buisness */,
 				F730D4752528B544001505C5 /* About */,
 				CE41869A2523586800E68F0E /* Edit Account */,
@@ -255,6 +289,8 @@
 		CEAF6128251F848600A1F355 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F71923BF252B17800098EFFB /* Order No VC Cells */,
+				F719236F252B06990098EFFB /* Orders VC Cells */,
 				CE2077FA25246E1E005E856B /* Wallet VC Cell */,
 				CE4B49D42521D767005211F1 /* Fast Food VC Cell */,
 				CE4B49C92521C592005211F1 /* Landing VC Cells */,
@@ -302,6 +338,7 @@
 		CEE0A44E251E072800D9DAF9 /* CustomerOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				F7B837AB252B36A5007B9B88 /* CustomerOrderingApp.entitlements */,
 				CEAF6122251F426300A1F355 /* UIView */,
 				CEE0A470251E188100D9DAF9 /* Extensions */,
 				CEE0A465251E08F400D9DAF9 /* View */,
@@ -383,6 +420,7 @@
 				CEC66B66252121C00093E83D /* UIButton.swift */,
 				CE3936C52523943B0051E7FF /* UINavigationController.swift */,
 				CE2077F8252444A5005E856B /* CellConfigurator.swift */,
+				F71923C7252B19F80098EFFB /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,6 +431,66 @@
 				CEE0A474251E72C300D9DAF9 /* LoginTableViewController.swift */,
 			);
 			path = "Register or Login";
+			sourceTree = "<group>";
+		};
+		F7192361252AFFF40098EFFB /* Add Discount Code */ = {
+			isa = PBXGroup;
+			children = (
+				F7192362252B000F0098EFFB /* AddDiscountCodeTableViewController.swift */,
+			);
+			path = "Add Discount Code";
+			sourceTree = "<group>";
+		};
+		F719236A252B05BF0098EFFB /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				F719236B252B05D20098EFFB /* OrdersViewController.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		F719236F252B06990098EFFB /* Orders VC Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F7192371252B06CF0098EFFB /* OrdersTableViewCell.swift */,
+				F7192372252B06CF0098EFFB /* OrdersTableViewCell.xib */,
+			);
+			path = "Orders VC Cells";
+			sourceTree = "<group>";
+		};
+		F71923AE252B11310098EFFB /* Order No  */ = {
+			isa = PBXGroup;
+			children = (
+				F71923AF252B11490098EFFB /* OrderNumberViewController.swift */,
+			);
+			path = "Order No ";
+			sourceTree = "<group>";
+		};
+		F71923BF252B17800098EFFB /* Order No VC Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F741E225252B4E25001BF82C /* Order List */,
+				F741E216252B4BED001BF82C /* Order Summary  */,
+				F71923C0252B17890098EFFB /* Estimated Arrival cell */,
+			);
+			path = "Order No VC Cells";
+			sourceTree = "<group>";
+		};
+		F71923C0252B17890098EFFB /* Estimated Arrival cell */ = {
+			isa = PBXGroup;
+			children = (
+				F71923C1252B17CA0098EFFB /* EstimatedArrivalTableViewCell.swift */,
+				F71923C2252B17CA0098EFFB /* EstimatedArrivalTableViewCell.xib */,
+			);
+			path = "Estimated Arrival cell";
+			sourceTree = "<group>";
+		};
+		F720B150252A5C9C00FC7861 /* Notes for delievery Courier */ = {
+			isa = PBXGroup;
+			children = (
+				F720B151252A5CCB00FC7861 /* NotesForDeliveryCourierTableViewController.swift */,
+			);
+			path = "Notes for delievery Courier";
 			sourceTree = "<group>";
 		};
 		F730D4752528B544001505C5 /* About */ = {
@@ -409,6 +507,32 @@
 				F730D4882528C3B8001505C5 /* NotesForBuisnessTableViewController.swift */,
 			);
 			path = "Notes for Buisness";
+			sourceTree = "<group>";
+		};
+		F741E216252B4BED001BF82C /* Order Summary  */ = {
+			isa = PBXGroup;
+			children = (
+				F741E217252B4C37001BF82C /* OrderNumberTableViewCell.swift */,
+				F741E218252B4C37001BF82C /* OrderNumberTableViewCell.xib */,
+			);
+			path = "Order Summary ";
+			sourceTree = "<group>";
+		};
+		F741E225252B4E25001BF82C /* Order List */ = {
+			isa = PBXGroup;
+			children = (
+				F741E22B252B4E4D001BF82C /* OrderListTableViewCell.swift */,
+				F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */,
+			);
+			path = "Order List";
+			sourceTree = "<group>";
+		};
+		F741E26C252B5659001BF82C /* Rider VC */ = {
+			isa = PBXGroup;
+			children = (
+				F741E26D252B566E001BF82C /* RiderViewController.swift */,
+			);
+			path = "Rider VC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,14 +596,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE0A45C251E073000D9DAF9 /* LaunchScreen.storyboard in Resources */,
+				F7192374252B06CF0098EFFB /* OrdersTableViewCell.xib in Resources */,
 				CEE0A46B251E096400D9DAF9 /* RWithEmailTableViewCell.xib in Resources */,
 				CEE0A459251E073000D9DAF9 /* Assets.xcassets in Resources */,
 				CE4B49D82521D793005211F1 /* FastFoodTableViewCell.xib in Resources */,
 				CEE0A457251E072800D9DAF9 /* Main.storyboard in Resources */,
+				F71923C4252B17CA0098EFFB /* EstimatedArrivalTableViewCell.xib in Resources */,
 				CEC66B6325209DEA0093E83D /* SearchBarHeaderTableViewCell.xib in Resources */,
+				F741E21A252B4C37001BF82C /* OrderNumberTableViewCell.xib in Resources */,
 				CE4B49D02521C5DD005211F1 /* PaginationTableViewCell.xib in Resources */,
 				CE2077FF25246E6A005E856B /* PaymentMethodsTableViewCell.xib in Resources */,
 				CE41869425232FD600E68F0E /* Account.storyboard in Resources */,
+				F741E22E252B4E4D001BF82C /* OrderListTableViewCell.xib in Resources */,
 				CEAF6131251F84BE00A1F355 /* CatagoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,14 +661,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71923C3252B17CA0098EFFB /* EstimatedArrivalTableViewCell.swift in Sources */,
 				CE4B49DE252204F5005211F1 /* BuisnessInformationTableViewController.swift in Sources */,
 				CE41869C2523587B00E68F0E /* EditAccountTableViewController.swift in Sources */,
 				CE3D36B625249859001A3652 /* AddPaymentMTableViewController.swift in Sources */,
 				CEC66B6225209DEA0093E83D /* SearchBarHeaderTableViewCell.swift in Sources */,
 				CE4B49CF2521C5DD005211F1 /* PaginationTableViewCell.swift in Sources */,
+				F7192363252B000F0098EFFB /* AddDiscountCodeTableViewController.swift in Sources */,
+				F7192373252B06CF0098EFFB /* OrdersTableViewCell.swift in Sources */,
+				F720B152252A5CCB00FC7861 /* NotesForDeliveryCourierTableViewController.swift in Sources */,
+				F741E22D252B4E4D001BF82C /* OrderListTableViewCell.swift in Sources */,
 				CEC66B67252121C00093E83D /* UIButton.swift in Sources */,
+				F71923C8252B19F80098EFFB /* UIView.swift in Sources */,
 				CEAF6130251F84BE00A1F355 /* CatagoryTableViewCell.swift in Sources */,
 				CE418698252333A300E68F0E /* MyAccountTableViewController.swift in Sources */,
+				F741E219252B4C37001BF82C /* OrderNumberTableViewCell.swift in Sources */,
 				F730D4782528B56F001505C5 /* AboutTableViewController.swift in Sources */,
 				CE2A34912523BD810014BF91 /* WalletViewController.swift in Sources */,
 				CE4B49DA2521FF2C005211F1 /* FoodDetailViewController.swift in Sources */,
@@ -555,8 +690,11 @@
 				CE3936C62523943B0051E7FF /* UINavigationController.swift in Sources */,
 				CEE0A450251E072800D9DAF9 /* AppDelegate.swift in Sources */,
 				CEAF6133251FA47900A1F355 /* UIImageView.swift in Sources */,
+				F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */,
+				F71923B0252B11490098EFFB /* OrderNumberViewController.swift in Sources */,
 				CEAF6125251F428E00A1F355 /* ScreenBottomView.swift in Sources */,
 				CEE0A452251E072800D9DAF9 /* SceneDelegate.swift in Sources */,
+				F719236C252B05D20098EFFB /* OrdersViewController.swift in Sources */,
 				CEC66B652520B1950093E83D /* LandingViewController.swift in Sources */,
 				CEE0A475251E72C300D9DAF9 /* LoginTableViewController.swift in Sources */,
 				CE41869E25235D1800E68F0E /* MyFavViewController.swift in Sources */,
@@ -705,6 +843,7 @@
 			baseConfigurationReference = F134BE55028578FE6FAADC77 /* Pods-CustomerOrderingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomerOrderingApp/CustomerOrderingApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BSRK4S25P;
@@ -717,6 +856,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Danish-Munir.CustomerOrderingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -727,6 +867,7 @@
 			baseConfigurationReference = E20D9DD4AE2D5DAA57A84A62 /* Pods-CustomerOrderingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomerOrderingApp/CustomerOrderingApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BSRK4S25P;
@@ -739,6 +880,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Danish-Munir.CustomerOrderingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

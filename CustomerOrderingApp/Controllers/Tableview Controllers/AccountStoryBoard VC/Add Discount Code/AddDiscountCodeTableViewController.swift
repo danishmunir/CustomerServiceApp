@@ -1,15 +1,15 @@
 //
-//  NotesForBuisnessTableViewController.swift
+//  AddDiscountCodeTableViewController.swift
 //  CustomerOrderingApp
 //
-//  Created by Danish Munir on 03/10/2020.
+//  Created by Danish Munir on 05/10/2020.
 //  Copyright © 2020 Danish Munir. All rights reserved.
 //
 
 import UIKit
 
-class NotesForBuisnessTableViewController: UITableViewController {
-    
+class AddDiscountCodeTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = UIColor(named: "F8F8FA")
@@ -19,17 +19,16 @@ class NotesForBuisnessTableViewController: UITableViewController {
     
     
     func rightText() {
-        let rightItem = UIBarButtonItem(title: "Save", style: UIBarButtonItem.Style.plain, target: self, action: nil)
+        let rightItem = UIBarButtonItem(title: "Add", style: UIBarButtonItem.Style.plain, target: self, action: nil)
         rightItem.tintColor = UIColor(named: "primaryColor")
         
         navigationItem.rightBarButtonItem?.tintColor = .systemPink
         self.navigationItem.rightBarButtonItem = rightItem
     }
-    
 }
 
 
-extension NotesForBuisnessTableViewController {
+extension AddDiscountCodeTableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 20
     }

@@ -14,7 +14,7 @@ class BuisnessInformationTableViewController:
     
     @IBOutlet weak var mapView: GMSMapView!
     var locManager = CLLocationManager()
-    var currentLocation: CLLocation!
+    
     var lat : CLLocationDegrees?
     var lng : CLLocationDegrees?
     
@@ -48,10 +48,7 @@ class BuisnessInformationTableViewController:
             
         }
     }
-    //    func getCurretntLoc() {
-    //
-    //
-    //    }
+    
     
     func showMapView() {
         
