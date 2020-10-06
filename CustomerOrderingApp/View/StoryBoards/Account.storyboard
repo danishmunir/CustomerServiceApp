@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tEr-Kb-pRb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nz7-7J-P2G">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -1016,7 +1016,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="SjT-Rq-ljv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="dataSource" destination="QOP-my-2FB" id="7uB-oG-jbG"/>
                                     <outlet property="delegate" destination="QOP-my-2FB" id="GgU-6k-XR1"/>
@@ -1040,6 +1040,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdg-Jd-M5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="14392.753623188408" y="184.82142857142856"/>
+        </scene>
+        <!--Enjoy Order View Controller-->
+        <scene sceneID="k3c-ye-urp">
+            <objects>
+                <viewController storyboardIdentifier="EnjoyOrderViewController" id="DBN-Hv-dSf" customClass="EnjoyOrderViewController" customModule="CustomerOrderingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ZQ-Jo-7Hg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gim-17-3WT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DBN-Hv-dSf" id="4hj-p3-cPe"/>
+                                    <outlet property="delegate" destination="DBN-Hv-dSf" id="zDi-ih-DRa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fjr-Cp-Sdc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gim-17-3WT" firstAttribute="leading" secondItem="fjr-Cp-Sdc" secondAttribute="leading" id="6j9-dq-Fdl"/>
+                            <constraint firstItem="fjr-Cp-Sdc" firstAttribute="trailing" secondItem="gim-17-3WT" secondAttribute="trailing" id="Grl-5d-KbY"/>
+                            <constraint firstItem="gim-17-3WT" firstAttribute="top" secondItem="4ZQ-Jo-7Hg" secondAttribute="top" id="Y6a-Jf-N6N"/>
+                            <constraint firstAttribute="bottom" secondItem="gim-17-3WT" secondAttribute="bottom" id="b1b-6o-zd9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IrK-KS-7bp"/>
+                    <connections>
+                        <outlet property="tableView" destination="gim-17-3WT" id="4nT-gm-wkx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyx-CV-3di" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16050.72463768116" y="191.51785714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YdM-1T-MMy">
@@ -1169,6 +1205,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1f8-PB-UF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13482.608695652176" y="184.82142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v4R-hf-erU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nz7-7J-P2G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hzs-EE-6LE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DBN-Hv-dSf" kind="relationship" relationship="rootViewController" id="mJg-31-DKZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FrE-Mf-QUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15140.579710144928" y="191.51785714285714"/>
         </scene>
     </scenes>
     <resources>

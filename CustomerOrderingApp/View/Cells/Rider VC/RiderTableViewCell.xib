@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RiderTableViewCell" rowHeight="443" id="KGk-i7-Jjw" customClass="RiderTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="433"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="433"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="SNO-zp-ewO">
+                        <rect key="frame" x="30" y="380" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="cK1-db-tIx"/>
+                            <constraint firstAttribute="width" constant="32" id="cnv-qO-2W2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bilal khan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-bm-R0i">
+                        <rect key="frame" x="77" y="380" width="61" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bicycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQh-2H-2d5">
+                        <rect key="frame" x="77" y="398.5" width="39" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" name="90949C"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1P-QP-yqT">
+                        <rect key="frame" x="260" y="381" width="87" height="30"/>
+                        <state key="normal" title="Contact Bilal">
+                            <color key="titleColor" name="primaryColor"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3c-S8-KqJ" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="370"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="370" id="Enn-T5-YeA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U3c-S8-KqJ" secondAttribute="trailing" constant="9" id="7O7-SM-iNm"/>
+                    <constraint firstItem="S1P-QP-yqT" firstAttribute="centerY" secondItem="SNO-zp-ewO" secondAttribute="centerY" id="GT7-RK-V6H"/>
+                    <constraint firstItem="BDb-bm-R0i" firstAttribute="leading" secondItem="SNO-zp-ewO" secondAttribute="trailing" constant="15" id="GYh-at-5zD"/>
+                    <constraint firstItem="qQh-2H-2d5" firstAttribute="leading" secondItem="BDb-bm-R0i" secondAttribute="leading" id="IQU-KP-FxO"/>
+                    <constraint firstItem="U3c-S8-KqJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mzf-Qc-0Wg"/>
+                    <constraint firstAttribute="trailing" secondItem="S1P-QP-yqT" secondAttribute="trailing" constant="22" id="cHV-fr-79Z"/>
+                    <constraint firstItem="SNO-zp-ewO" firstAttribute="top" secondItem="U3c-S8-KqJ" secondAttribute="bottom" constant="10" id="cUC-8S-2aE"/>
+                    <constraint firstItem="U3c-S8-KqJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dic-BI-9G7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="SNO-zp-ewO" secondAttribute="bottom" constant="12" id="dnw-tt-c7q"/>
+                    <constraint firstItem="SNO-zp-ewO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="eDg-8M-YAS"/>
+                    <constraint firstItem="BDb-bm-R0i" firstAttribute="top" secondItem="SNO-zp-ewO" secondAttribute="top" id="ef6-vJ-jIU"/>
+                    <constraint firstItem="qQh-2H-2d5" firstAttribute="top" secondItem="BDb-bm-R0i" secondAttribute="bottom" constant="2" id="qbR-zg-Gug"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mapView" destination="U3c-S8-KqJ" id="RMG-xA-Ovx"/>
+                <outlet property="profileImageView" destination="SNO-zp-ewO" id="YiS-VH-iyk"/>
+            </connections>
+            <point key="canvasLocation" x="22.463768115942031" y="129.57589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImage" width="2880" height="1800"/>
+        <namedColor name="90949C">
+            <color red="0.56499999761581421" green="0.57999998331069946" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="0.94499999284744263" green="0.3919999897480011" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

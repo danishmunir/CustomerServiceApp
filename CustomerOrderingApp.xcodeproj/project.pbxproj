@@ -60,6 +60,11 @@
 		F741E22D252B4E4D001BF82C /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E22B252B4E4D001BF82C /* OrderListTableViewCell.swift */; };
 		F741E22E252B4E4D001BF82C /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */; };
 		F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E26D252B566E001BF82C /* RiderViewController.swift */; };
+		F7C43F3E252C6AA3006C82AB /* RiderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43F3C252C6AA3006C82AB /* RiderTableViewCell.swift */; };
+		F7C43F3F252C6AA3006C82AB /* RiderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C43F3D252C6AA3006C82AB /* RiderTableViewCell.xib */; };
+		F7C43FF1252C9A63006C82AB /* EnjoyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43FF0252C9A63006C82AB /* EnjoyOrderViewController.swift */; };
+		F7C43FF8252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43FF6252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift */; };
+		F7C43FF9252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C43FF7252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +126,11 @@
 		F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		F741E26D252B566E001BF82C /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		F7B837AB252B36A5007B9B88 /* CustomerOrderingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomerOrderingApp.entitlements; sourceTree = "<group>"; };
+		F7C43F3C252C6AA3006C82AB /* RiderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderTableViewCell.swift; sourceTree = "<group>"; };
+		F7C43F3D252C6AA3006C82AB /* RiderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RiderTableViewCell.xib; sourceTree = "<group>"; };
+		F7C43FF0252C9A63006C82AB /* EnjoyOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyOrderViewController.swift; sourceTree = "<group>"; };
+		F7C43FF6252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyYourOrderTableViewCell.swift; sourceTree = "<group>"; };
+		F7C43FF7252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnjoyYourOrderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +209,7 @@
 		CE4186962523336D00E68F0E /* AccountStoryBoard VC */ = {
 			isa = PBXGroup;
 			children = (
+				F7C43FEE252C9A49006C82AB /* Enjoy Your Order */,
 				F741E26C252B5659001BF82C /* Rider VC */,
 				F71923AE252B11310098EFFB /* Order No  */,
 				F719236A252B05BF0098EFFB /* Orders */,
@@ -289,6 +300,8 @@
 		CEAF6128251F848600A1F355 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F7C43FF4252C9B2A006C82AB /* Enjoy Order */,
+				F7C43F3A252C6A86006C82AB /* Rider VC */,
 				F71923BF252B17800098EFFB /* Order No VC Cells */,
 				F719236F252B06990098EFFB /* Orders VC Cells */,
 				CE2077FA25246E1E005E856B /* Wallet VC Cell */,
@@ -535,6 +548,40 @@
 			path = "Rider VC";
 			sourceTree = "<group>";
 		};
+		F7C43F3A252C6A86006C82AB /* Rider VC */ = {
+			isa = PBXGroup;
+			children = (
+				F7C43F3C252C6AA3006C82AB /* RiderTableViewCell.swift */,
+				F7C43F3D252C6AA3006C82AB /* RiderTableViewCell.xib */,
+			);
+			path = "Rider VC";
+			sourceTree = "<group>";
+		};
+		F7C43FEE252C9A49006C82AB /* Enjoy Your Order */ = {
+			isa = PBXGroup;
+			children = (
+				F7C43FF0252C9A63006C82AB /* EnjoyOrderViewController.swift */,
+			);
+			path = "Enjoy Your Order";
+			sourceTree = "<group>";
+		};
+		F7C43FF4252C9B2A006C82AB /* Enjoy Order */ = {
+			isa = PBXGroup;
+			children = (
+				F7C43FF5252C9B37006C82AB /* EnjoyYourOrder */,
+			);
+			path = "Enjoy Order";
+			sourceTree = "<group>";
+		};
+		F7C43FF5252C9B37006C82AB /* EnjoyYourOrder */ = {
+			isa = PBXGroup;
+			children = (
+				F7C43FF6252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift */,
+				F7C43FF7252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib */,
+			);
+			path = EnjoyYourOrder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -596,7 +643,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE0A45C251E073000D9DAF9 /* LaunchScreen.storyboard in Resources */,
+				F7C43F3F252C6AA3006C82AB /* RiderTableViewCell.xib in Resources */,
 				F7192374252B06CF0098EFFB /* OrdersTableViewCell.xib in Resources */,
+				F7C43FF9252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib in Resources */,
 				CEE0A46B251E096400D9DAF9 /* RWithEmailTableViewCell.xib in Resources */,
 				CEE0A459251E073000D9DAF9 /* Assets.xcassets in Resources */,
 				CE4B49D82521D793005211F1 /* FastFoodTableViewCell.xib in Resources */,
@@ -661,6 +710,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C43F3E252C6AA3006C82AB /* RiderTableViewCell.swift in Sources */,
 				F71923C3252B17CA0098EFFB /* EstimatedArrivalTableViewCell.swift in Sources */,
 				CE4B49DE252204F5005211F1 /* BuisnessInformationTableViewController.swift in Sources */,
 				CE41869C2523587B00E68F0E /* EditAccountTableViewController.swift in Sources */,
@@ -684,6 +734,7 @@
 				CEAF6127251F844400A1F355 /* CatagoriesViewController.swift in Sources */,
 				CE2077FE25246E6A005E856B /* PaymentMethodsTableViewCell.swift in Sources */,
 				F730D4892528C3B8001505C5 /* NotesForBuisnessTableViewController.swift in Sources */,
+				F7C43FF8252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift in Sources */,
 				CE2077F9252444A5005E856B /* CellConfigurator.swift in Sources */,
 				CE4B49D22521D6AF005211F1 /* FastFoodViewController.swift in Sources */,
 				CEE0A472251E18B000D9DAF9 /* String.swift in Sources */,
@@ -693,6 +744,7 @@
 				F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */,
 				F71923B0252B11490098EFFB /* OrderNumberViewController.swift in Sources */,
 				CEAF6125251F428E00A1F355 /* ScreenBottomView.swift in Sources */,
+				F7C43FF1252C9A63006C82AB /* EnjoyOrderViewController.swift in Sources */,
 				CEE0A452251E072800D9DAF9 /* SceneDelegate.swift in Sources */,
 				F719236C252B05D20098EFFB /* OrdersViewController.swift in Sources */,
 				CEC66B652520B1950093E83D /* LandingViewController.swift in Sources */,
