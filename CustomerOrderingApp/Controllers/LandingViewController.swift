@@ -14,8 +14,8 @@ class LandingViewController: UIViewController {
     //MARK: IBOutlets
     
     @IBOutlet weak var searchandTextFiledView: UIView!
-    @IBOutlet weak var DeliveryRectangleImageView: UIImageView!
-    @IBOutlet weak var pickRectangleImageView: UIImageView!
+    @IBOutlet weak var DeliveryRectangleView: UIView!
+    @IBOutlet weak var pickRectangleView: UIView!
     @IBOutlet weak var deliveryBtn: UIButton!
     @IBOutlet weak var pickupBtn: UIButton!
     @IBOutlet weak var imgView: UIImageView!
@@ -59,19 +59,25 @@ class LandingViewController: UIViewController {
     //MARK: IBActions
     @IBAction func deliveryBtnTapped(_ sender: Any) {
         
-        DeliveryRectangleImageView.isHidden = false
-        pickRectangleImageView.isHidden = true
+        DeliveryRectangleView.isHidden = false
+        pickRectangleView.isHidden = true
         deliveryBtn.setTitleColor(.white, for: .normal)
         pickupBtn.setTitleColor(UIColor(named: "primaryColor"), for: .normal)
+
+        pickupBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 12)
+        deliveryBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Medium", size: 12)
+        
     }
     
     
     
     @IBAction func pickupBtnTapped(_ sender: UIButton) {
-        DeliveryRectangleImageView.isHidden = true
-        pickRectangleImageView.isHidden = false
+        DeliveryRectangleView.isHidden = true
+        pickRectangleView.isHidden = false
         deliveryBtn.setTitleColor(UIColor(named: "primaryColor"), for: .normal)
         pickupBtn.setTitleColor(.white, for: .normal)
+        deliveryBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 12)
+        pickupBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Medium", size: 12)
         
     }
     
@@ -123,6 +129,7 @@ extension LandingViewController: UICollectionViewDataSource,UICollectionViewDele
         switch collectionView {
         case bannerCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PaginationCollectionViewCell", for: indexPath) as! PaginationCollectionViewCell
+            
             return cell
         case popularCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularNearYouCollectionViewCell", for: indexPath) as! PopularNearYouCollectionViewCell
@@ -143,11 +150,11 @@ extension LandingViewController: UICollectionViewDataSource,UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView {
         case bannerCollectionView:
-            let width = (self.bannerCollectionView.frame.width - 10)
+            let width = (self.bannerCollectionView.frame.width)
             let height = (self.bannerCollectionView.frame.height - 10)
             return CGSize(width: width, height: height)
         case popularCollectionView:
-            return CGSize(width: 200 , height: 230)
+            return CGSize(width: 220 , height: 230)
         case trendingCollectionView:
             return CGSize(width: 80, height: 80)
             

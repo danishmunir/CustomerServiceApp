@@ -30,10 +30,10 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Track" translatesAutoresizingMaskIntoConstraints="NO" id="6gV-3v-SSM">
-                                        <rect key="frame" x="5" y="2.5" width="25" height="25"/>
+                                        <rect key="frame" x="3" y="-2.5" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="25" id="6YV-Op-KzE"/>
-                                            <constraint firstAttribute="height" constant="25" id="d0g-yV-8Fd"/>
+                                            <constraint firstAttribute="width" constant="40" id="6YV-Op-KzE"/>
+                                            <constraint firstAttribute="height" constant="40" id="d0g-yV-8Fd"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quresh Doodh Shop (Lahore Gate)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddz-ss-AJo">
@@ -114,13 +114,13 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1h-h6-OxE">
-                                        <rect key="frame" x="381" y="5" width="120" height="20"/>
+                                        <rect key="frame" x="371" y="5" width="130" height="25"/>
                                         <color key="backgroundColor" red="0.94509803920000002" green="0.3921568627" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="bkN-Rk-mI5"/>
-                                            <constraint firstAttribute="height" constant="20" id="iaI-Re-5Ha"/>
+                                            <constraint firstAttribute="width" constant="130" id="bkN-Rk-mI5"/>
+                                            <constraint firstAttribute="height" constant="25" id="iaI-Re-5Ha"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
                                         <state key="normal" title="Spend Rs.200, get Rs.100 off">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -175,7 +175,7 @@
                                     <constraint firstItem="7E2-4s-0IY" firstAttribute="leading" secondItem="S0V-rz-SAf" secondAttribute="trailing" constant="5" id="PZZ-nr-tS5"/>
                                     <constraint firstItem="Ddz-ss-AJo" firstAttribute="top" secondItem="JYE-Ub-uaR" secondAttribute="bottom" constant="15" id="T5o-i7-xUo"/>
                                     <constraint firstAttribute="trailing" secondItem="JYE-Ub-uaR" secondAttribute="trailing" id="TuS-9Y-2fs"/>
-                                    <constraint firstItem="6gV-3v-SSM" firstAttribute="leading" secondItem="M0d-Qw-7tK" secondAttribute="leading" constant="5" id="aTa-ZC-yUA"/>
+                                    <constraint firstItem="6gV-3v-SSM" firstAttribute="leading" secondItem="M0d-Qw-7tK" secondAttribute="leading" constant="3" id="aTa-ZC-yUA"/>
                                     <constraint firstItem="qFj-pr-rM0" firstAttribute="leading" secondItem="1UF-EN-I1t" secondAttribute="trailing" constant="5" id="cTP-wl-NNN"/>
                                     <constraint firstItem="S0V-rz-SAf" firstAttribute="top" secondItem="rJV-sW-kAz" secondAttribute="top" id="ehJ-Yb-cXE"/>
                                     <constraint firstItem="FmM-ab-8YN" firstAttribute="centerY" secondItem="qFj-pr-rM0" secondAttribute="centerY" constant="1" id="g43-x0-5eL"/>
@@ -232,7 +232,7 @@
             <color red="0.56499999761581421" green="0.57999998331069946" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="0.94499999284744263" green="0.3919999897480011" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17599999904632568" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

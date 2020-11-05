@@ -26,7 +26,7 @@ extension UIViewController {
     fileprivate func prepareTitleView(str: String) {
         let titlelabel                       = UILabel()
         titlelabel.text                      = str
-        titlelabel.font                      = UIFont(name: "Futura-Bold", size: 15)
+        titlelabel.font                      = UIFont(name: "HelveticaNeue-Bold", size: 15)
         titlelabel.textColor                 = .black
         titlelabel.backgroundColor           = .clear
         titlelabel.adjustsFontSizeToFitWidth = true

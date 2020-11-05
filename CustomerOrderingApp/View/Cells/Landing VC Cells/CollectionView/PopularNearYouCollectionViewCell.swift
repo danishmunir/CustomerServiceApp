@@ -9,22 +9,31 @@
 import UIKit
 
 class PopularNearYouCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var minsStackView: UIStackView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backView.uiViewShadow(myView: backView)
+        backView.layer.masksToBounds = false
         
-        imgView.layer.cornerRadius = 10
-//        backView.layer.cornerRadius = 10
-//        backView.layer.shadowOffset = .zero
-//        backView.layer.shadowColor = UIColor.lightGray.cgColor
-//        backView.layer.shadowRadius = 5
-//        backView.layer.shadowOpacity = 10
+        minsStackView.layer.cornerRadius = 5
         
-    }
+        DispatchQueue.main.async { [self] in
+            self.imgView.roundCorners([.topRight,.topLeft], radius: 5)
+            
+        }
+        
+        
+        
+        
 
+    }
+    
 }
+
 
 
