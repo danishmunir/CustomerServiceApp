@@ -1,35 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchBarHeaderTableViewCell" rowHeight="65" id="KGk-i7-Jjw" customClass="SearchBarHeaderTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="293" height="65"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchBarHeaderTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="SearchBarHeaderTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="45"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="293" height="65"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="45"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-nu-7h8">
-                        <rect key="frame" x="16" y="6" width="261" height="53"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </searchBar>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oga-uX-0Kg">
+                        <rect key="frame" x="16" y="7" width="255" height="30"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ZWB-hS-Ct5">
+                                <rect key="frame" x="10" y="7" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="aIg-Fr-NYk"/>
+                                    <constraint firstAttribute="height" constant="16" id="pEn-Ak-snC"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ASu-zZ-4T6">
+                                <rect key="frame" x="36" y="-2" width="219" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="10D-bt-bXb"/>
+                            <constraint firstItem="ZWB-hS-Ct5" firstAttribute="leading" secondItem="Oga-uX-0Kg" secondAttribute="leading" constant="10" id="1jv-Is-6LE"/>
+                            <constraint firstItem="ASu-zZ-4T6" firstAttribute="height" secondItem="Oga-uX-0Kg" secondAttribute="height" multiplier="1.13333" id="Bwt-kr-Cn5"/>
+                            <constraint firstAttribute="trailing" secondItem="ASu-zZ-4T6" secondAttribute="trailing" id="bAF-O5-Kpl"/>
+                            <constraint firstItem="ASu-zZ-4T6" firstAttribute="centerY" secondItem="Oga-uX-0Kg" secondAttribute="centerY" id="cUx-Ro-1ll"/>
+                            <constraint firstItem="ZWB-hS-Ct5" firstAttribute="centerY" secondItem="Oga-uX-0Kg" secondAttribute="centerY" id="gvp-dp-eUW"/>
+                            <constraint firstItem="ASu-zZ-4T6" firstAttribute="leading" secondItem="ZWB-hS-Ct5" secondAttribute="trailing" constant="10" id="lgm-D0-xsI"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tP2-j0-0xp">
+                        <rect key="frame" x="0.0" y="43" width="287" height="1"/>
+                        <viewLayoutGuide key="safeArea" id="VsM-qL-rK7"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gVQ-CJ-TXk"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CV-ln-3np">
+                        <rect key="frame" x="0.0" y="0.0" width="287" height="1"/>
+                        <viewLayoutGuide key="safeArea" id="WnZ-1u-3YR"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="08t-7t-2B3"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" name="WhiteBackWithDark"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Gth-nu-7h8" secondAttribute="trailing" constant="16" id="DUT-4S-sZN"/>
-                    <constraint firstItem="Gth-nu-7h8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Nr9-f2-PdV"/>
-                    <constraint firstItem="Gth-nu-7h8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hSw-yG-WH1"/>
-                    <constraint firstAttribute="bottom" secondItem="Gth-nu-7h8" secondAttribute="bottom" constant="6" id="tRi-BC-PlT"/>
+                    <constraint firstItem="tP2-j0-0xp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1NN-IT-W7c"/>
+                    <constraint firstAttribute="trailing" secondItem="6CV-ln-3np" secondAttribute="trailing" id="1gi-Ta-m99"/>
+                    <constraint firstItem="Oga-uX-0Kg" firstAttribute="top" secondItem="6CV-ln-3np" secondAttribute="bottom" constant="6" id="7p0-Kg-15X"/>
+                    <constraint firstAttribute="trailing" secondItem="tP2-j0-0xp" secondAttribute="trailing" id="F2U-fw-dlK"/>
+                    <constraint firstItem="tP2-j0-0xp" firstAttribute="top" secondItem="Oga-uX-0Kg" secondAttribute="bottom" constant="6" id="Kxh-zw-FzA"/>
+                    <constraint firstItem="Oga-uX-0Kg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MQG-VQ-18S"/>
+                    <constraint firstAttribute="bottom" secondItem="tP2-j0-0xp" secondAttribute="bottom" id="QTG-WG-tqA"/>
+                    <constraint firstItem="6CV-ln-3np" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fTj-ig-czy"/>
+                    <constraint firstItem="6CV-ln-3np" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l6d-lf-SDz"/>
+                    <constraint firstAttribute="trailing" secondItem="Oga-uX-0Kg" secondAttribute="trailing" constant="16" id="v96-HC-2KQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="107.97101449275362" y="89.397321428571431"/>
+            <point key="canvasLocation" x="103.62318840579711" y="55.915178571428569"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Search" width="13.5" height="13.5"/>
+        <namedColor name="Background">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteBackWithDark">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

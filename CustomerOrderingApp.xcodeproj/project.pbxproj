@@ -58,6 +58,7 @@
 		F741E22D252B4E4D001BF82C /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E22B252B4E4D001BF82C /* OrderListTableViewCell.swift */; };
 		F741E22E252B4E4D001BF82C /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */; };
 		F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E26D252B566E001BF82C /* RiderViewController.swift */; };
+		F78505B72554347600CC5616 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78505B62554347500CC5616 /* UILabel.swift */; };
 		F7B386532549A34000792CAF /* PopularNearYouCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B386512549A33F00792CAF /* PopularNearYouCollectionViewCell.swift */; };
 		F7B386542549A34000792CAF /* PopularNearYouCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B386522549A33F00792CAF /* PopularNearYouCollectionViewCell.xib */; };
 		F7C43F3E252C6AA3006C82AB /* RiderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43F3C252C6AA3006C82AB /* RiderTableViewCell.swift */; };
@@ -65,6 +66,7 @@
 		F7C43FF1252C9A63006C82AB /* EnjoyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43FF0252C9A63006C82AB /* EnjoyOrderViewController.swift */; };
 		F7C43FF8252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43FF6252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift */; };
 		F7C43FF9252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C43FF7252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib */; };
+		F7E1140125556ED900A73906 /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1140025556ED900A73906 /* CommonClass.swift */; };
 		F7E8940725482F5F00B365BF /* PaginationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8940525482F5F00B365BF /* PaginationCollectionViewCell.swift */; };
 		F7E8940825482F5F00B365BF /* PaginationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E8940625482F5F00B365BF /* PaginationCollectionViewCell.xib */; };
 		F7E8942E2548602800B365BF /* TrendingCatagoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8942C2548602800B365BF /* TrendingCatagoriesCollectionViewCell.swift */; };
@@ -133,6 +135,7 @@
 		F741E22B252B4E4D001BF82C /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		F741E26D252B566E001BF82C /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
+		F78505B62554347500CC5616 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		F7B386512549A33F00792CAF /* PopularNearYouCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNearYouCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7B386522549A33F00792CAF /* PopularNearYouCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularNearYouCollectionViewCell.xib; sourceTree = "<group>"; };
 		F7B837AB252B36A5007B9B88 /* CustomerOrderingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomerOrderingApp.entitlements; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 		F7C43FF0252C9A63006C82AB /* EnjoyOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyOrderViewController.swift; sourceTree = "<group>"; };
 		F7C43FF6252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyYourOrderTableViewCell.swift; sourceTree = "<group>"; };
 		F7C43FF7252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnjoyYourOrderTableViewCell.xib; sourceTree = "<group>"; };
+		F7E1140025556ED900A73906 /* CommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
 		F7E8940525482F5F00B365BF /* PaginationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7E8940625482F5F00B365BF /* PaginationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaginationCollectionViewCell.xib; sourceTree = "<group>"; };
 		F7E8942C2548602800B365BF /* TrendingCatagoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCatagoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -441,6 +445,8 @@
 				CE2077F8252444A5005E856B /* CellConfigurator.swift */,
 				F71923C7252B19F80098EFFB /* UIView.swift */,
 				F7F15814255029C500C8D005 /* UIViewController.swift */,
+				F78505B62554347500CC5616 /* UILabel.swift */,
+				F7E1140025556ED900A73906 /* CommonClass.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -656,6 +662,7 @@
 				CEE0A449251E072800D9DAF9 /* Frameworks */,
 				CEE0A44A251E072800D9DAF9 /* Resources */,
 				D50E86FA8E78F95A297C8B57 /* [CP] Copy Pods Resources */,
+				690371BB2F09EB4B2FA7E13C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -750,6 +757,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		690371BB2F09EB4B2FA7E13C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomerOrderingApp/Pods-CustomerOrderingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomerOrderingApp/Pods-CustomerOrderingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomerOrderingApp/Pods-CustomerOrderingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D50E86FA8E78F95A297C8B57 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -804,6 +828,7 @@
 				F7F1581C25502A5C00C8D005 /* CellIdentifier.swift in Sources */,
 				F7E8942E2548602800B365BF /* TrendingCatagoriesCollectionViewCell.swift in Sources */,
 				F730D4892528C3B8001505C5 /* NotesForBuisnessTableViewController.swift in Sources */,
+				F78505B72554347600CC5616 /* UILabel.swift in Sources */,
 				F7C43FF8252C9B57006C82AB /* EnjoyYourOrderTableViewCell.swift in Sources */,
 				CE2077F9252444A5005E856B /* CellConfigurator.swift in Sources */,
 				F7F15815255029C500C8D005 /* UIViewController.swift in Sources */,
@@ -820,6 +845,7 @@
 				CEE0A452251E072800D9DAF9 /* SceneDelegate.swift in Sources */,
 				F719236C252B05D20098EFFB /* OrdersViewController.swift in Sources */,
 				CEC66B652520B1950093E83D /* LandingViewController.swift in Sources */,
+				F7E1140125556ED900A73906 /* CommonClass.swift in Sources */,
 				CEE0A475251E72C300D9DAF9 /* LoginTableViewController.swift in Sources */,
 				CE41869E25235D1800E68F0E /* MyFavViewController.swift in Sources */,
 				CE4B49D72521D793005211F1 /* FastFoodTableViewCell.swift in Sources */,

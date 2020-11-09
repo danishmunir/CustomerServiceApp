@@ -13,15 +13,14 @@ class FastFoodTableViewCell: UITableViewCell {
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var starImgView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgView.layer.cornerRadius = 3
-        mainView.layer.cornerRadius = 2
-        mainView.layer.shadowOffset = .zero
-        mainView.layer.shadowColor = UIColor.lightGray.cgColor
-        mainView.layer.shadowRadius = 5
-        mainView.layer.shadowOpacity = 1
-        
+        imgView.layer.cornerRadius = 2
+        starImgView.image = starImgView.image?.withRenderingMode(.alwaysTemplate)
+        starImgView.tintColor = UIColor(named: "primaryColor")
+        mainView.uiViewShadow(myView: mainView)
         
         
     }

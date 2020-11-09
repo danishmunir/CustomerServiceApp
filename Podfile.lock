@@ -6,20 +6,24 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (3.10.0):
     - GoogleMaps/Base (= 3.10.0)
+  - ReadMoreTextView (3.0.1)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - ReadMoreTextView
 
 SPEC REPOS:
   trunk:
     - GoogleMaps
     - GooglePlaces
+    - ReadMoreTextView
 
 SPEC CHECKSUMS:
   GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
   GooglePlaces: 9a6f5f3a0c88da2aa1bf7426a65d3e004f5e69a1
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
 
-PODFILE CHECKSUM: f1a03f9d73988475fa4359fae0ffa4feb4e0f7f3
+PODFILE CHECKSUM: 25316ddbb1de302356a9fbe7ef6143d62f2ba0ba
 
 COCOAPODS: 1.9.3

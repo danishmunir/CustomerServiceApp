@@ -17,6 +17,7 @@ extension UIViewController {
         self.navigationItem.leftBarButtonItem = leftButton
         let rightButton = UIBarButtonItem(image: rightImage?.withRenderingMode(.alwaysOriginal), style: .plain, target: nil , action: nil)
         self.navigationItem.rightBarButtonItem = rightButton
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "WhiteBackWithDark")
     }
     
     @objc func btnTapped() {
@@ -27,7 +28,7 @@ extension UIViewController {
         let titlelabel                       = UILabel()
         titlelabel.text                      = str
         titlelabel.font                      = UIFont(name: "HelveticaNeue-Bold", size: 15)
-        titlelabel.textColor                 = .black
+        titlelabel.textColor                 = UIColor(named: "BlackWhite")
         titlelabel.backgroundColor           = .clear
         titlelabel.adjustsFontSizeToFitWidth = true
         titlelabel.textAlignment             = .center

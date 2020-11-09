@@ -13,12 +13,16 @@ class PopularNearYouCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var minsStackView: UIStackView!
+    @IBOutlet weak var starImageView: UIImageView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         backView.uiViewShadow(myView: backView)
         backView.layer.masksToBounds = false
+        starImageView.image = starImageView.image?.withRenderingMode(.alwaysTemplate)
+        starImageView.tintColor = UIColor(named: "primaryColor")
+        
         
         minsStackView.layer.cornerRadius = 5
         

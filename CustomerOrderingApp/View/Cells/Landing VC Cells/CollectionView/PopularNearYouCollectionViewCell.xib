@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -80,7 +81,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5(50)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chq-cS-bW9">
                                         <rect key="frame" x="33" y="182" width="36.5" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="0.94509803921568625" green="0.39215686274509803" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" name="primaryColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Md0-ET-PVm">
@@ -116,6 +117,7 @@
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="W5c-BU-pE9">
                                         <rect key="frame" x="10" y="182" width="20" height="20"/>
+                                        <color key="tintColor" name="primaryColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="jUS-Fc-NmO"/>
                                             <constraint firstAttribute="width" constant="20" id="xd4-BM-9kl"/>
@@ -176,7 +178,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="WhiteBackWithDark"/>
                                 <constraints>
                                     <constraint firstItem="4Dp-wm-by2" firstAttribute="bottom" secondItem="gOD-4F-eIu" secondAttribute="bottom" id="19m-CP-jO4"/>
                                     <constraint firstItem="5po-ZK-pCc" firstAttribute="leading" secondItem="4Dp-wm-by2" secondAttribute="trailing" constant="5" id="3VV-ZQ-xOr"/>
@@ -225,7 +227,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="I8f-01-aHj" secondAttribute="bottom" constant="5" id="1vH-oI-pfy"/>
                             <constraint firstAttribute="trailing" secondItem="I8f-01-aHj" secondAttribute="trailing" constant="5" id="HC4-T1-bI3"/>
@@ -248,6 +250,7 @@
                 <outlet property="backView" destination="I8f-01-aHj" id="xUH-2T-ccC"/>
                 <outlet property="imgView" destination="iP6-QN-w0Z" id="hE8-Bc-yiv"/>
                 <outlet property="minsStackView" destination="tyb-xe-jxY" id="DEh-uG-uug"/>
+                <outlet property="starImageView" destination="W5c-BU-pE9" id="ZYe-6I-tkO"/>
             </connections>
             <point key="canvasLocation" x="-9.4202898550724647" y="118.86160714285714"/>
         </collectionViewCell>
@@ -256,6 +259,12 @@
         <image name="Order" width="150" height="88"/>
         <image name="Star" width="9" height="9"/>
         <image name="Track" width="24" height="24"/>
+        <namedColor name="WhiteBackWithDark">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.17599999904632568" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

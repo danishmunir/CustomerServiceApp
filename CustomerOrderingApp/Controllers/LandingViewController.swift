@@ -22,6 +22,7 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var locationTextBtn: UIButton!
+    @IBOutlet weak var filterBtn: UIButton!
     
     
     @IBOutlet weak var bannerCollectionView: UICollectionView!
@@ -39,12 +40,12 @@ class LandingViewController: UIViewController {
         popularCollectionView.register(UINib(nibName: "PopularNearYouCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PopularNearYouCollectionViewCell")
         trendingCollectionView.register(UINib(nibName: "TrendingCatagoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TrendingCatagoriesCollectionViewCell")
         tableView.register(UINib(nibName: "FastFoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FastFoodTableViewCell")
-        
+
+        filterBtn.tintColor =  UIColor(named: "primaryColor")
         
         searchTextField.delegate = self
         searchandTextFiledView.layer.cornerRadius = 5
         imgView.roundedImage(image: imgView)
-        //        tableView.register(UINib(nibName: "PaginationTableViewCell", bundle: nil), forCellReuseIdentifier: "PaginationTableViewCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -116,7 +117,6 @@ extension LandingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FastFoodTableViewCell") as! FastFoodTableViewCell
-        
         return cell
     }
 }
