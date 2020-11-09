@@ -195,7 +195,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="M0d-Qw-7tK" firstAttribute="top" secondItem="AoY-ya-wdq" secondAttribute="top" constant="30" id="W5g-5R-H34"/>
                             <constraint firstItem="M0d-Qw-7tK" firstAttribute="leading" secondItem="AoY-ya-wdq" secondAttribute="leading" constant="20" id="dlP-eT-ndu"/>
@@ -231,6 +231,9 @@
         <image name="Track" width="24" height="24"/>
         <namedColor name="90949C">
             <color red="0.56499999761581421" green="0.57999998331069946" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="WhiteBackWithDark">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

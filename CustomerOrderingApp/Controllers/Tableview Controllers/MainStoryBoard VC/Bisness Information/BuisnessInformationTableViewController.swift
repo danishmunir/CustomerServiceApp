@@ -83,27 +83,32 @@ extension BuisnessInformationTableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        
-        let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
-        let myView = UIView()
-        myView.backgroundColor = UIColor(named: "F8F8FA")
-        
-        headerView.backgroundView = myView
-        
-        if section == 1 {
-            headerView.textLabel?.text = "Contact business"
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Contact business"
+        } else if section == 1 {
+            return "Buisness Notes"
         } else if section == 2 {
-            headerView.textLabel?.text = "Buisness Notes"
-        } else if section == 3 {
-            headerView.textLabel?.text = "Buisness Hours"
+            return "Buisness Hours"
         }
-        
+        return ""
+    }
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        headerView.textLabel?.textColor = UIColor(named: "WhiteBackWithDark")
+        let myView = UIView()
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
+        headerView.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+        headerView.textLabel?.textColor = UIColor(named: "BlackWhite")
+        myView.backgroundColor = UIColor(named: "Background")
+        headerView.backgroundView = myView
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return .leastNormalMagnitude
     }
+    
+    
+    
 }
 
