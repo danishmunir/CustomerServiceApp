@@ -59,6 +59,8 @@
 		F741E22E252B4E4D001BF82C /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */; };
 		F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741E26D252B566E001BF82C /* RiderViewController.swift */; };
 		F78505B72554347600CC5616 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78505B62554347500CC5616 /* UILabel.swift */; };
+		F7ABA6F0255BFCB300A5C820 /* PopularDealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABA6EE255BFCB300A5C820 /* PopularDealsTableViewCell.swift */; };
+		F7ABA6F1255BFCB300A5C820 /* PopularDealsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7ABA6EF255BFCB300A5C820 /* PopularDealsTableViewCell.xib */; };
 		F7B386532549A34000792CAF /* PopularNearYouCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B386512549A33F00792CAF /* PopularNearYouCollectionViewCell.swift */; };
 		F7B386542549A34000792CAF /* PopularNearYouCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B386522549A33F00792CAF /* PopularNearYouCollectionViewCell.xib */; };
 		F7C43F3E252C6AA3006C82AB /* RiderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C43F3C252C6AA3006C82AB /* RiderTableViewCell.swift */; };
@@ -136,6 +138,8 @@
 		F741E22C252B4E4D001BF82C /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		F741E26D252B566E001BF82C /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		F78505B62554347500CC5616 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		F7ABA6EE255BFCB300A5C820 /* PopularDealsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDealsTableViewCell.swift; sourceTree = "<group>"; };
+		F7ABA6EF255BFCB300A5C820 /* PopularDealsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDealsTableViewCell.xib; sourceTree = "<group>"; };
 		F7B386512549A33F00792CAF /* PopularNearYouCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNearYouCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7B386522549A33F00792CAF /* PopularNearYouCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularNearYouCollectionViewCell.xib; sourceTree = "<group>"; };
 		F7B837AB252B36A5007B9B88 /* CustomerOrderingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomerOrderingApp.entitlements; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 		CEAF6128251F848600A1F355 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F7ABA6ED255BFC5400A5C820 /* Food Detail VC */,
 				F7C43FF4252C9B2A006C82AB /* Enjoy Order */,
 				F7C43F3A252C6A86006C82AB /* Rider VC */,
 				F71923BF252B17800098EFFB /* Order No VC Cells */,
@@ -561,6 +566,15 @@
 			path = "Rider VC";
 			sourceTree = "<group>";
 		};
+		F7ABA6ED255BFC5400A5C820 /* Food Detail VC */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABA6EE255BFCB300A5C820 /* PopularDealsTableViewCell.swift */,
+				F7ABA6EF255BFCB300A5C820 /* PopularDealsTableViewCell.xib */,
+			);
+			path = "Food Detail VC";
+			sourceTree = "<group>";
+		};
 		F7C43F3A252C6A86006C82AB /* Rider VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +731,7 @@
 				F7192374252B06CF0098EFFB /* OrdersTableViewCell.xib in Resources */,
 				F7E8942F2548602800B365BF /* TrendingCatagoriesCollectionViewCell.xib in Resources */,
 				F7C43FF9252C9B57006C82AB /* EnjoyYourOrderTableViewCell.xib in Resources */,
+				F7ABA6F1255BFCB300A5C820 /* PopularDealsTableViewCell.xib in Resources */,
 				CEE0A46B251E096400D9DAF9 /* RWithEmailTableViewCell.xib in Resources */,
 				CEE0A459251E073000D9DAF9 /* Assets.xcassets in Resources */,
 				CE4B49D82521D793005211F1 /* FastFoodTableViewCell.xib in Resources */,
@@ -835,6 +850,7 @@
 				CE4B49D22521D6AF005211F1 /* FastFoodViewController.swift in Sources */,
 				CEE0A472251E18B000D9DAF9 /* String.swift in Sources */,
 				CE3936C62523943B0051E7FF /* UINavigationController.swift in Sources */,
+				F7ABA6F0255BFCB300A5C820 /* PopularDealsTableViewCell.swift in Sources */,
 				CEE0A450251E072800D9DAF9 /* AppDelegate.swift in Sources */,
 				CEAF6133251FA47900A1F355 /* UIImageView.swift in Sources */,
 				F741E26E252B566E001BF82C /* RiderViewController.swift in Sources */,
@@ -998,7 +1014,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BSRK4S25P;
 				INFOPLIST_FILE = CustomerOrderingApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1022,7 +1038,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BSRK4S25P;
 				INFOPLIST_FILE = CustomerOrderingApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -51,8 +51,8 @@ extension MyAccountTableViewController {
         let storyboard = UIStoryboard(name: "Account", bundle: nil)
         let editVc = storyboard.instantiateViewController(withIdentifier: "EditAccountTableViewController") as! EditAccountTableViewController
         let favVc = storyboard.instantiateViewController(withIdentifier: "MyFavViewController") as! MyFavViewController
-        let walletVc = storyboard.instantiateViewController(identifier: "WalletViewController") as! WalletViewController
-        let aboutVc = storyboard.instantiateViewController(identifier: "AboutTableViewController") as! AboutTableViewController
+        let walletVc = storyboard.instantiateViewController(withIdentifier: "WalletViewController") as! WalletViewController
+        let aboutVc = storyboard.instantiateViewController(withIdentifier: "AboutTableViewController") as! AboutTableViewController
         if indexPath.section == 1 {
             if indexPath.row == 0 {
                 navigationController?.pushViewController(editVc, animated: true)

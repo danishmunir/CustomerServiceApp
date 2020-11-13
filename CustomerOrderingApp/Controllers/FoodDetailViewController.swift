@@ -19,7 +19,7 @@ class FoodDetailViewController: UIViewController {
     let label = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "FastFoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FastFoodTableViewCell")
+        tableView.register(UINib(nibName: "PopularDealsTableViewCell", bundle: nil), forCellReuseIdentifier: "PopularDealsTableViewCell")
         textView.delegate = self
         
     }
@@ -43,7 +43,7 @@ class FoodDetailViewController: UIViewController {
             range: (str.string as NSString).range(of: "more..."))
         
         textView.attributedText = str
-       
+        
         textView.isSelectable = true
         textView.isEditable = false
         
@@ -83,23 +83,24 @@ extension FoodDetailViewController: UITableViewDelegate, UITableViewDataSource {
         return 2
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FastFoodTableViewCell") as! FastFoodTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PopularDealsTableViewCell") as! PopularDealsTableViewCell
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60
     }
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return .leastNormalMagnitude
-//    }
     
-
+    
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
@@ -119,7 +120,7 @@ extension FoodDetailViewController: UITableViewDelegate, UITableViewDataSource {
         headerView.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
         myView.backgroundColor = UIColor(named: "F8F8FA")
         headerView.backgroundView = myView
-       
+        
     }
     
 }

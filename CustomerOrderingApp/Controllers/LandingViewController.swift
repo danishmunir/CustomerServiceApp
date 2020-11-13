@@ -35,19 +35,27 @@ class LandingViewController: UIViewController {
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         bannerCollectionView.register(UINib(nibName: "PaginationCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PaginationCollectionViewCell")
         popularCollectionView.register(UINib(nibName: "PopularNearYouCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PopularNearYouCollectionViewCell")
         trendingCollectionView.register(UINib(nibName: "TrendingCatagoriesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TrendingCatagoriesCollectionViewCell")
         tableView.register(UINib(nibName: "FastFoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FastFoodTableViewCell")
-
+        
         filterBtn.tintColor =  UIColor(named: "primaryColor")
         
         searchTextField.delegate = self
         searchandTextFiledView.layer.cornerRadius = 5
         imgView.roundedImage(image: imgView)
+        
+        let swipe = UISwipeGestureRecognizer(target:self, action: #selector(swipefunv))
+        swipe.direction = .right
+        self.view.addGestureRecognizer(swipe)
     }
     
+    
+    
+    @objc func swipefunv() {
+        self.navigationController?.popViewController(animated: true)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
@@ -57,25 +65,36 @@ class LandingViewController: UIViewController {
         navigationController?.navigationBar.isHidden = false
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection){
+                if traitCollection.userInterfaceStyle == .dark
+                {
+                    
+                }else{
+                    
+                }
+            }
+        }
+    }
+    
+    
     //MARK: IBActions
     @IBAction func deliveryBtnTapped(_ sender: Any) {
-        
         DeliveryRectangleView.isHidden = false
         pickRectangleView.isHidden = true
         deliveryBtn.setTitleColor(.white, for: .normal)
-        pickupBtn.setTitleColor(UIColor(named: "primaryColor"), for: .normal)
-
+        pickupBtn.setTitleColor(UIColor(named: "BtnColor"), for: .normal)
         pickupBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 12)
         deliveryBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Medium", size: 12)
         
     }
     
-    
-    
     @IBAction func pickupBtnTapped(_ sender: UIButton) {
         DeliveryRectangleView.isHidden = true
         pickRectangleView.isHidden = false
-        deliveryBtn.setTitleColor(UIColor(named: "primaryColor"), for: .normal)
+        deliveryBtn.setTitleColor(UIColor(named: "BtnColor"), for: .normal)
         pickupBtn.setTitleColor(.white, for: .normal)
         deliveryBtn.titleLabel!.font = UIFont(name: "HelveticaNeue", size: 12)
         pickupBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Medium", size: 12)
@@ -100,7 +119,7 @@ class LandingViewController: UIViewController {
 extension LandingViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "CatagoriesViewController") as! CatagoriesViewController
+        let vc : CatagoriesViewController = storyBoard.instantiateViewController(withIdentifier: "CatagoriesViewController") as! CatagoriesViewController
         self.present(vc, animated: true, completion: nil)
     }
 }
@@ -180,4 +199,3 @@ extension LandingViewController: UICollectionViewDataSource,UICollectionViewDele
     }
     
 }
-

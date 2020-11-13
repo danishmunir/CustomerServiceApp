@@ -51,7 +51,7 @@ class RegisterTableViewController: UITableViewController {
     
     @objc func bottomBtnTapped() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "LoginTableViewController") as! LoginTableViewController
+        let vc = storyBoard.instantiateViewController(withIdentifier: "LoginTableViewController") as! LoginTableViewController
         navigationController?.pushViewController(vc, animated: true)
     }
     func navigationleftButton() {

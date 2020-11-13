@@ -5,8 +5,6 @@
 //  Created by M.Danish Arslan Munir on 26/09/2020.
 //  Copyright © 2020 Danish Munir. All rights reserved.
 //
-
-//03045903545
 import UIKit
 
 class CatagoriesViewController: UIViewController {
@@ -33,8 +31,6 @@ extension CatagoriesViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CatagoryTableViewCell", for: indexPath) as! CatagoryTableViewCell
         return cell
     }
-    
-    
 }
 
 

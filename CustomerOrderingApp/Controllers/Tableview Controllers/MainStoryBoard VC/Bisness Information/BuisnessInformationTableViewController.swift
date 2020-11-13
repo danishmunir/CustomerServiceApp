@@ -99,7 +99,7 @@ extension BuisnessInformationTableViewController {
         let myView = UIView()
         headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
         headerView.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
-        headerView.textLabel?.textColor = UIColor(named: "BlackWhite")
+        headerView.textLabel?.textColor = UIColor(named: "Default")
         myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
     }
