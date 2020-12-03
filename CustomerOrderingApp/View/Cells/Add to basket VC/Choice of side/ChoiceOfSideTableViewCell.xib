@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="ChoiceOfSideTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6Z-aW-Nem">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick" translatesAutoresizingMaskIntoConstraints="NO" id="6qj-Z1-Iyl">
+                                <rect key="frame" x="23" y="22.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="T8o-BO-Wob"/>
+                                    <constraint firstAttribute="height" constant="15" id="eHZ-vK-wpZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DB-WW-1DV">
+                                <rect key="frame" x="48" y="23" width="34" height="14"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs. 99.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fe-En-yjX">
+                                <rect key="frame" x="249" y="23" width="51" height="14"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="UIViewColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="4G0-WS-HbX"/>
+                            <constraint firstItem="3DB-WW-1DV" firstAttribute="leading" secondItem="6qj-Z1-Iyl" secondAttribute="trailing" constant="10" id="5PW-3h-aQr"/>
+                            <constraint firstItem="6qj-Z1-Iyl" firstAttribute="leading" secondItem="o6Z-aW-Nem" secondAttribute="leading" constant="23" id="KKq-s9-vJ1"/>
+                            <constraint firstAttribute="trailing" secondItem="9Fe-En-yjX" secondAttribute="trailing" constant="20" id="Kn6-AI-lzL"/>
+                            <constraint firstItem="3DB-WW-1DV" firstAttribute="centerY" secondItem="6qj-Z1-Iyl" secondAttribute="centerY" id="geD-qy-CUi"/>
+                            <constraint firstItem="9Fe-En-yjX" firstAttribute="centerY" secondItem="3DB-WW-1DV" secondAttribute="centerY" id="pDN-fg-fKM"/>
+                            <constraint firstItem="6qj-Z1-Iyl" firstAttribute="centerY" secondItem="o6Z-aW-Nem" secondAttribute="centerY" id="xNm-Oj-Cjp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o6Z-aW-Nem" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GR3-Px-Wg0"/>
+                    <constraint firstItem="o6Z-aW-Nem" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jmn-8Z-5J5"/>
+                    <constraint firstAttribute="bottom" secondItem="o6Z-aW-Nem" secondAttribute="bottom" id="qGG-mL-T6e"/>
+                    <constraint firstAttribute="trailing" secondItem="o6Z-aW-Nem" secondAttribute="trailing" id="tit-8b-cLk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemLbl" destination="3DB-WW-1DV" id="IMJ-cI-T3X"/>
+                <outlet property="priceLbl" destination="9Fe-En-yjX" id="b7m-u5-E9N"/>
+                <outlet property="tickImg" destination="6qj-Z1-Iyl" id="c6F-hW-pSb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="83.370535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Tick" width="11.5" height="10.5"/>
+        <namedColor name="PrimaryLabelColorDefault">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UIViewColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

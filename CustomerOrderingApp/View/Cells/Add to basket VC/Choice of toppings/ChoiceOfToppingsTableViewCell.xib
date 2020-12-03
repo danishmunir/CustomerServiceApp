@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="54" id="KGk-i7-Jjw" customClass="ChoiceOfToppingsTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-uX-dBb">
+                        <rect key="frame" x="0.0" y="0.0" width="412" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSH-fZ-2IO">
+                                <rect key="frame" x="56" y="18" width="7" height="14"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA0-L7-w1g" customClass="RoundUIView" customModule="CustomerOrderingApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="10" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ncr-Tv-zcJ"/>
+                                    <constraint firstAttribute="width" constant="30" id="YcU-ji-0eo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="UIViewCircleRadius"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-SV-oUt">
+                                <rect key="frame" x="20" y="10" width="30" height="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" name="PrimaryLabelColorDefault"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Fatija" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bV1-Uh-O3o">
+                                <rect key="frame" x="109" y="18" width="76.5" height="14"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSl-vl-L59" customClass="RoundUIView" customModule="CustomerOrderingApp" customModuleProvider="target">
+                                <rect key="frame" x="69" y="10" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EHb-Lo-Nez"/>
+                                    <constraint firstAttribute="height" constant="30" id="qnF-c8-tg7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="UIViewCircleRadius"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKS-jn-aJM">
+                                <rect key="frame" x="69" y="10" width="30" height="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" name="PrimaryLabelColorDefault"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LSl-vl-L59" firstAttribute="leading" secondItem="KSH-fZ-2IO" secondAttribute="trailing" constant="6" id="1fK-dH-wb4"/>
+                            <constraint firstItem="zA0-L7-w1g" firstAttribute="centerY" secondItem="hHa-uX-dBb" secondAttribute="centerY" id="2E5-8I-DX6"/>
+                            <constraint firstItem="5z5-SV-oUt" firstAttribute="centerY" secondItem="zA0-L7-w1g" secondAttribute="centerY" id="9kN-WR-ZmQ"/>
+                            <constraint firstItem="5z5-SV-oUt" firstAttribute="height" secondItem="zA0-L7-w1g" secondAttribute="height" id="FrT-tX-M7i"/>
+                            <constraint firstItem="jKS-jn-aJM" firstAttribute="width" secondItem="LSl-vl-L59" secondAttribute="width" id="GRG-PK-piq"/>
+                            <constraint firstItem="bV1-Uh-O3o" firstAttribute="leading" secondItem="LSl-vl-L59" secondAttribute="trailing" constant="10" id="N7b-fA-SVM"/>
+                            <constraint firstItem="jKS-jn-aJM" firstAttribute="centerX" secondItem="LSl-vl-L59" secondAttribute="centerX" id="RCO-RU-rZV"/>
+                            <constraint firstItem="KSH-fZ-2IO" firstAttribute="leading" secondItem="zA0-L7-w1g" secondAttribute="trailing" constant="6" id="SjZ-wy-Uv5"/>
+                            <constraint firstItem="jKS-jn-aJM" firstAttribute="height" secondItem="LSl-vl-L59" secondAttribute="height" id="UPU-6Y-GRr"/>
+                            <constraint firstAttribute="height" constant="50" id="V32-Ml-pcJ"/>
+                            <constraint firstItem="5z5-SV-oUt" firstAttribute="width" secondItem="zA0-L7-w1g" secondAttribute="width" id="Vhl-on-meb"/>
+                            <constraint firstItem="LSl-vl-L59" firstAttribute="centerY" secondItem="KSH-fZ-2IO" secondAttribute="centerY" id="aLy-p8-rYZ"/>
+                            <constraint firstItem="bV1-Uh-O3o" firstAttribute="centerY" secondItem="jKS-jn-aJM" secondAttribute="centerY" id="fUB-Em-tcG"/>
+                            <constraint firstItem="KSH-fZ-2IO" firstAttribute="centerY" secondItem="5z5-SV-oUt" secondAttribute="centerY" id="fXd-bz-C4R"/>
+                            <constraint firstItem="jKS-jn-aJM" firstAttribute="centerY" secondItem="LSl-vl-L59" secondAttribute="centerY" id="fx4-hH-jqV"/>
+                            <constraint firstItem="zA0-L7-w1g" firstAttribute="leading" secondItem="hHa-uX-dBb" secondAttribute="leading" constant="20" id="jH4-M5-Lya"/>
+                            <constraint firstItem="5z5-SV-oUt" firstAttribute="centerX" secondItem="zA0-L7-w1g" secondAttribute="centerX" id="wLM-vV-Hpk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hHa-uX-dBb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1hd-XM-7mB"/>
+                    <constraint firstAttribute="trailing" secondItem="hHa-uX-dBb" secondAttribute="trailing" id="OZg-7l-Pab"/>
+                    <constraint firstAttribute="bottom" secondItem="hHa-uX-dBb" secondAttribute="bottom" id="sl0-Ne-sMh"/>
+                    <constraint firstItem="hHa-uX-dBb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u1L-6G-FHs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="73.913043478260875" y="46.205357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryLabelColorDefault">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UIViewCircleRadius">
+            <color red="0.90600001811981201" green="0.91399997472763062" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

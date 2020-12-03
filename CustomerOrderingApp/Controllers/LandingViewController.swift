@@ -29,6 +29,8 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var trendingCollectionView: UICollectionView!
     
+    let bottomButton = UIButton(type: .system)
+    
     
     
     
@@ -42,42 +44,40 @@ class LandingViewController: UIViewController {
         
         filterBtn.tintColor =  UIColor(named: "primaryColor")
         
+        let tapOnProfile = UITapGestureRecognizer(target: self, action: #selector(profileImgTapped(_:)))
+        imgView.addGestureRecognizer(tapOnProfile)
+        
+        
         searchTextField.delegate = self
         searchandTextFiledView.layer.cornerRadius = 5
         imgView.roundedImage(image: imgView)
         
-        let swipe = UISwipeGestureRecognizer(target:self, action: #selector(swipefunv))
-        swipe.direction = .right
-        self.view.addGestureRecognizer(swipe)
+        
+    }
+    
+    @objc func profileImgTapped(_ sender: UITapGestureRecognizer) {
+        
+        self.pushToController(from: .account, identifier: .MyAccountTableViewController)
     }
     
     
-    
-    @objc func swipefunv() {
-        self.navigationController?.popViewController(animated: true)
-    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         navigationController?.navigationBar.isHidden = true
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.isHidden = false
+        guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
+        window.viewWithTag(201)?.removeFromSuperview()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        ScreenBottomView.viewCartButton(button: bottomButton, view: self.view, btnText: "View Cart", cartLableTxt: "3", resultLabelTxt: "Rs. 50.00")
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        if #available(iOS 13.0, *) {
-            if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection){
-                if traitCollection.userInterfaceStyle == .dark
-                {
-                    
-                }else{
-                    
-                }
-            }
-        }
-    }
+    
     
     
     //MARK: IBActions
@@ -159,13 +159,7 @@ extension LandingViewController: UICollectionViewDataSource,UICollectionViewDele
         default:
             return UICollectionViewCell()
         }
-        
-        
-        
     }
-    
-    
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView {
         case bannerCollectionView:
@@ -173,16 +167,12 @@ extension LandingViewController: UICollectionViewDataSource,UICollectionViewDele
             let height = (self.bannerCollectionView.frame.height - 10)
             return CGSize(width: width, height: height)
         case popularCollectionView:
-            return CGSize(width: 220 , height: 230)
+            return CGSize(width: self.popularCollectionView.frame.width - 100 , height: self.popularCollectionView.frame.height - 10)
         case trendingCollectionView:
             return CGSize(width: 80, height: 80)
-            
-            
         default:
             return .zero
         }
-        
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -190,6 +180,7 @@ extension LandingViewController: UICollectionViewDataSource,UICollectionViewDele
         case bannerCollectionView:
             break
         case popularCollectionView:
+            self.pushToController(from: .main, identifier: .FoodDetailViewController)
             break
         case trendingCollectionView:
             self.pushToController(from: .main, identifier: .FastFoodViewController)

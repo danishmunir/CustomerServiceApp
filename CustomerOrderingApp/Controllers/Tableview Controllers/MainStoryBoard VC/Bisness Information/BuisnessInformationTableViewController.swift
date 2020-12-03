@@ -9,10 +9,11 @@
 import UIKit
 import GoogleMaps
 import CoreLocation
-class BuisnessInformationTableViewController:
-    UITableViewController , CLLocationManagerDelegate {
+class BuisnessInformationTableViewController: UITableViewController , CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var openBasketTapped: UIView!
+    
     var locManager = CLLocationManager()
     
     var lat : CLLocationDegrees?
@@ -25,12 +26,25 @@ class BuisnessInformationTableViewController:
         //        getCurretntLoc()
         locManager.delegate = self
         locManager.startUpdatingLocation()
+       
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(basketViewTapped))
+        openBasketTapped.addGestureRecognizer(tap)
         
         tableView.tableHeaderView?.backgroundColor = .clear
         perpareNavigation(txtTitle: "Buisness information", leftImage: UIImage(named: "Back"), rightImage: nil)
         
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeViewController))
+        self.view.addGestureRecognizer(swipe)
         
+    }
+    
+    @objc func basketViewTapped() {
+        self.pushToController(from: .main, identifier: .BasketViewController)
+    }
+    
+    @objc func swipeViewController() {
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -95,13 +109,14 @@ extension BuisnessInformationTableViewController {
     }
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.textColor = UIColor(named: "WhiteBackWithDark")
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
         headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
         headerView.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
         headerView.textLabel?.textColor = UIColor(named: "Default")
         myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

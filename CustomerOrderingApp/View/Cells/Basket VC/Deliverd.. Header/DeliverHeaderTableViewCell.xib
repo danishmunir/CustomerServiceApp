@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="KGk-i7-Jjw" customClass="DeliverHeaderTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="78"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5T-2L-G0C">
+                        <rect key="frame" x="0.0" y="0.0" width="441" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivered by the buisness staff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCF-NS-Sqv">
+                                <rect key="frame" x="20" y="16" width="213" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Track" translatesAutoresizingMaskIntoConstraints="NO" id="KbI-h0-L4D">
+                                <rect key="frame" x="391" y="12.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="MnP-Xj-B8t"/>
+                                    <constraint firstAttribute="width" constant="25" id="Yem-I2-gsv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="PCF-NS-Sqv" firstAttribute="centerY" secondItem="J5T-2L-G0C" secondAttribute="centerY" id="C6F-51-NG6"/>
+                            <constraint firstItem="PCF-NS-Sqv" firstAttribute="leading" secondItem="J5T-2L-G0C" secondAttribute="leading" constant="20" id="gze-Mn-BvX"/>
+                            <constraint firstAttribute="height" constant="50" id="o2A-2n-Dmj"/>
+                            <constraint firstAttribute="trailing" secondItem="KbI-h0-L4D" secondAttribute="trailing" constant="25" id="sRl-VR-Sut"/>
+                            <constraint firstItem="KbI-h0-L4D" firstAttribute="centerY" secondItem="PCF-NS-Sqv" secondAttribute="centerY" id="wXy-IV-B7C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="J5T-2L-G0C" secondAttribute="bottom" id="9ZC-KP-Uui"/>
+                    <constraint firstItem="J5T-2L-G0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CB0-lE-aq6"/>
+                    <constraint firstAttribute="trailing" secondItem="J5T-2L-G0C" secondAttribute="trailing" id="Mmy-Ad-XuO"/>
+                    <constraint firstItem="J5T-2L-G0C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jJ0-NQ-Xhe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="170.28985507246378" y="54.241071428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Track" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryLabelColorDefault">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

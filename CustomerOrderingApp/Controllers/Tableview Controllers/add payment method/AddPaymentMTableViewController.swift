@@ -12,6 +12,7 @@ class AddPaymentMTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = UIColor(named: "Background")
         perpareNavigation(txtTitle: "Add payment method", leftImage: nil, rightImage: nil)
         leftText()
         rightText()
@@ -53,12 +54,12 @@ extension AddPaymentMTableViewController {
     }
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.textColor = .black
-        
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
-        
-        headerView.textLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
-        myView.backgroundColor = UIColor(named: "F8F8FA")
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
+        headerView.textLabel?.font = UIFont(name: "SFUIText-Medium", size: 15)
+        headerView.textLabel?.textColor = UIColor(named: "Default")
+        myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

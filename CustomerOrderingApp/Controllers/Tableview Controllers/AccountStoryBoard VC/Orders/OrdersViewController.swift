@@ -12,7 +12,7 @@ class OrdersViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor(named: "F8F8FA")
+        tableView.backgroundColor = UIColor(named: "Background")
         perpareNavigation(txtTitle: "Orders", leftImage: UIImage(named: "Cross"), rightImage: nil)
         tableView.register(UINib(nibName: "OrdersTableViewCell", bundle: nil), forCellReuseIdentifier: "OrdersTableViewCell")
         
@@ -52,10 +52,12 @@ extension OrdersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
-        myView.backgroundColor = UIColor(named: "F8F8FA")
-        
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
+        headerView.textLabel?.font = UIFont(name: "SFUIText-Medium", size: 12)
+        headerView.textLabel?.textColor = UIColor(named: "Default")
+        myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

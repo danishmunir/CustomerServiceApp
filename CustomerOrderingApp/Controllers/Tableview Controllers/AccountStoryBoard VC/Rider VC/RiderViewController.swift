@@ -15,7 +15,7 @@ class RiderViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor(named: "F8F8FA")
+        tableView.backgroundColor = UIColor(named: "Background")
         perpareNavigation(txtTitle: "Order #(4335)", leftImage: UIImage(named: "Cross"), rightImage: UIImage(named: "QuestionMark"))
         tableView.register(UINib(nibName: "EstimatedArrivalTableViewCell", bundle: nil), forCellReuseIdentifier: "EstimatedArrivalTableViewCell")
         tableView.register(UINib(nibName: "RiderTableViewCell", bundle: nil), forCellReuseIdentifier: "RiderTableViewCell")
@@ -120,7 +120,7 @@ extension RiderViewController: UITableViewDelegate, UITableViewDataSource {
         
         
         let myView = UIView()
-        myView.backgroundColor = UIColor(named: "F8F8FA")
+        myView.backgroundColor = UIColor(named: "SectionsColor")
         
         headerView.backgroundView = myView
     }
@@ -131,7 +131,7 @@ extension RiderViewController: UITableViewDelegate, UITableViewDataSource {
             
             headerView.textLabel?.font = UIFont(name: "Helvetica Neue", size: 12)
         }
-        myView.backgroundColor = UIColor(named: "F8F8FA")
+        myView.backgroundColor = UIColor(named: "SectionsColor")
         headerView.backgroundView = myView
         
     }

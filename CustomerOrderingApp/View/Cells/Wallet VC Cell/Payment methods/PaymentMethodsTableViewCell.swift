@@ -9,10 +9,11 @@
 import UIKit
 
 class PaymentMethodsTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var NextImgView: UIImageView!
     @IBOutlet weak var cardExpiredLable: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var imgView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

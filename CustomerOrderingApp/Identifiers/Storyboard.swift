@@ -8,11 +8,12 @@
 
 import UIKit
 
-let mainBundle          = Bundle.main
+let mainBundle = Bundle.main
 
 
 enum Storyboard: String {
-    case main           = "Main"
+    case main = "Main"
+    case account  = "Account"
 }
 
 // MARK: Main
@@ -23,8 +24,6 @@ extension Storyboard {
         case FilterTableViewController
         case FastFoodViewController
        
-        
-        
         var instance: UIViewController {
             return UIStoryboard(name: Storyboard.main.rawValue, bundle: mainBundle).instantiateViewController(withIdentifier: self.rawValue)
         }
@@ -33,3 +32,16 @@ extension Storyboard {
 }
 
 
+// MARK: Account
+extension Storyboard {
+    enum Account: String {
+        case NotesForBuisnessTableViewController
+       
+        
+        
+        var instance: UIViewController {
+            return UIStoryboard(name: Storyboard.main.rawValue, bundle: mainBundle).instantiateViewController(withIdentifier: self.rawValue)
+        }
+    }
+    
+}

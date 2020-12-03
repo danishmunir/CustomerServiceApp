@@ -23,8 +23,10 @@ class LoginTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationleftButton()
+//        navigationleftButton()
         cornerRaiusOfBtns()
+        perpareNavigation(txtTitle: "Register or login", leftImage: UIImage(named: "Cross"), rightImage: nil)
+//        tableView.backgroundColor = UIColor(named: "Background")
     }
     //MARK: - Functions
     
@@ -59,12 +61,11 @@ class LoginTableViewController: UITableViewController {
     //MARK: - IBActions
     
     @IBAction func registerWithEmailTapped(_ sender: Any) {
+        self.pushToController(from: .main, identifier: .RegisterTableViewController)
     }
     
     @IBAction func loginBtnTapped(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "CatagoriesViewController") as! CatagoriesViewController
-        navigationController?.pushViewController(vc, animated: true)
+        self.pushToController(from: .main, identifier: .CatagoriesViewController)
         
     }
     

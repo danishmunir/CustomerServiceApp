@@ -10,16 +10,21 @@ import UIKit
 
 class OrderNumberViewController: UIViewController {
     
+    var items = ["Toppings", "Chicken Fatija", "Oilvias" , "Chilli", "Toppings", "Chicken Fatija", "Oilvias" , "Chilli", "Toppings", "Chicken Fatija", "Oilvias" , "Chilli"]
+    var allLabels = [UILabel()]
     
     @IBOutlet weak var tableView: UITableView!
     
+    var selected : Bool = false
+    var selectedIndex : Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor(named: "F8F8FA")
+        tableView.backgroundColor = UIColor(named: "Background")
         perpareNavigation(txtTitle: "Order #(4335)", leftImage: UIImage(named: "Cross"), rightImage: UIImage(named: "QuestionMark"))
         tableView.register(UINib(nibName: "EstimatedArrivalTableViewCell", bundle: nil), forCellReuseIdentifier: "EstimatedArrivalTableViewCell")
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        tableView.register(UINib(nibName: "OrderNumberTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderNumberTableViewCell")
+        
         tableView.register(UINib(nibName: "OrderListTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderListTableViewCell")
     }
     
@@ -38,7 +43,7 @@ extension OrderNumberViewController: UITableViewDelegate, UITableViewDataSource 
         } else if section == 1 {
             return 1
         } else if section == 2 {
-            return 3
+            return 4
         }
         return 0
     }
@@ -46,27 +51,42 @@ extension OrderNumberViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "EstimatedArrivalTableViewCell") as! EstimatedArrivalTableViewCell
         let orderListCell = tableView.dequeueReusableCell(withIdentifier: "OrderListTableViewCell") as! OrderListTableViewCell
         let defaltCell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-        let orderNumberCell = tableView.dequeueReusableCell(withIdentifier: "OrderNumberTableViewCell") as! OrderNumberTableViewCell
         if indexPath.section == 1 {
-            defaltCell.textLabel?.textColor = .black
+            defaltCell.textLabel?.textColor = UIColor(named: "PrimaryLabelColorDefault")
             defaltCell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 12)
             defaltCell.textLabel?.text = "9 longrace Road, Walthamasow, London, E13 ADT"
             return defaltCell
         } else if indexPath.section == 2 {
             if indexPath.row == 0 {
-                return orderNumberCell
+                defaltCell.textLabel?.textColor = UIColor(named: "PrimaryLabelColorDefault")
+                defaltCell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 12)
+                defaltCell.textLabel?.text = "Order from McDonalds Maal Road"
+                return defaltCell
             } else if indexPath.row == 1 {
+                for  lbl in items {
+                    let newLabel = UILabel()
+                    newLabel.textColor = UIColor(named: "SecondaryLblColor")
+                    newLabel.font = UIFont(name: ".SFUIText-Regular", size: 15)
+                    newLabel.text = lbl
+                    allLabels.append(newLabel)
+                    orderListCell.stackView.addArrangedSubview(newLabel)
+                }
                 return orderListCell
             } else if indexPath.row == 2 {
+                
+                return orderListCell
+            }
+            
+            else if indexPath.row == 3 {
                 defaltCell.textLabel?.textColor = UIColor(named: "primaryColor")
                 defaltCell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 12)
                 defaltCell.textLabel?.text = "View order receipt"
+                defaltCell.accessoryType = .disclosureIndicator
                 return defaltCell
             }
         }
         return cell
     }
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
             return 30
@@ -84,10 +104,12 @@ extension OrderNumberViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
-        myView.backgroundColor = UIColor(named: "F8F8FA")
-        
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
+        headerView.textLabel?.font = UIFont(name: "SFUIText-Medium", size: 12)
+        headerView.textLabel?.textColor = UIColor(named: "Default")
+        myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

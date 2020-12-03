@@ -2,53 +2,77 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="OrderListTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="OrderListTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="158"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <rect key="frame" x="0.0" y="0.0" width="290" height="158"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXt-E0-yxO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="158"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2x Cod and Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-1Q-ilQ">
-                                <rect key="frame" x="20" y="10" width="121.5" height="17.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="2x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-1Q-ilQ">
+                                <rect key="frame" x="20" y="5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="9qo-zG-mDX"/>
+                                    <constraint firstAttribute="height" constant="20" id="UnR-RL-ekw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1x Cans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaQ-Uo-nco">
-                                <rect key="frame" x="20" y="32.5" width="55.5" height="17.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Pizza(Main item)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8c-Ox-Uue">
+                                <rect key="frame" x="50" y="6" width="87.5" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYh-hb-NcH">
-                                <rect key="frame" x="43.5" y="53" width="28.5" height="14"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                <color key="textColor" name="90949C"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JbF-uw-yYD">
+                                <rect key="frame" x="50" y="29" width="230" height="119"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIL-7Q-RKU">
+                                        <rect key="frame" x="0.0" y="119" width="39.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                        <color key="textColor" name="SecondaryLblColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Rs. 100.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-Q4-V3B">
+                                <rect key="frame" x="219" y="8" width="51" height="14"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="UIViewColor"/>
                         <constraints>
                             <constraint firstItem="Z6T-1Q-ilQ" firstAttribute="leading" secondItem="RXt-E0-yxO" secondAttribute="leading" constant="20" id="6Oj-bd-OqW"/>
-                            <constraint firstItem="XYh-hb-NcH" firstAttribute="centerX" secondItem="zaQ-Uo-nco" secondAttribute="centerX" constant="10" id="dPQ-R0-xDZ"/>
-                            <constraint firstItem="zaQ-Uo-nco" firstAttribute="top" secondItem="Z6T-1Q-ilQ" secondAttribute="bottom" constant="5" id="dwA-cF-U5g"/>
-                            <constraint firstAttribute="bottom" secondItem="XYh-hb-NcH" secondAttribute="bottom" constant="10" id="i81-yz-aI8"/>
-                            <constraint firstItem="XYh-hb-NcH" firstAttribute="top" secondItem="zaQ-Uo-nco" secondAttribute="bottom" constant="3" id="li6-ba-fhA"/>
-                            <constraint firstItem="zaQ-Uo-nco" firstAttribute="leading" secondItem="Z6T-1Q-ilQ" secondAttribute="leading" id="wIX-sh-ejN"/>
-                            <constraint firstItem="Z6T-1Q-ilQ" firstAttribute="top" secondItem="RXt-E0-yxO" secondAttribute="top" constant="10" id="wha-X4-kBo"/>
+                            <constraint firstItem="y8c-Ox-Uue" firstAttribute="leading" secondItem="Z6T-1Q-ilQ" secondAttribute="trailing" constant="10" id="EFO-I2-bHF"/>
+                            <constraint firstItem="y8c-Ox-Uue" firstAttribute="centerY" secondItem="Z6T-1Q-ilQ" secondAttribute="centerY" id="O36-11-6OP"/>
+                            <constraint firstItem="HyX-Q4-V3B" firstAttribute="centerY" secondItem="y8c-Ox-Uue" secondAttribute="centerY" id="Vy6-DG-zao"/>
+                            <constraint firstAttribute="bottom" secondItem="JbF-uw-yYD" secondAttribute="bottom" constant="10" id="dOb-da-lxb"/>
+                            <constraint firstItem="JbF-uw-yYD" firstAttribute="top" secondItem="y8c-Ox-Uue" secondAttribute="bottom" constant="5" id="eSz-vV-fX1"/>
+                            <constraint firstAttribute="trailing" secondItem="JbF-uw-yYD" secondAttribute="trailing" constant="10" id="exn-BD-KbY"/>
+                            <constraint firstItem="y8c-Ox-Uue" firstAttribute="height" secondItem="Z6T-1Q-ilQ" secondAttribute="height" multiplier="0.9" id="fx0-r7-bW0"/>
+                            <constraint firstAttribute="trailing" secondItem="HyX-Q4-V3B" secondAttribute="trailing" constant="20" id="r3s-yq-HPU"/>
+                            <constraint firstItem="JbF-uw-yYD" firstAttribute="leading" secondItem="y8c-Ox-Uue" secondAttribute="leading" id="teA-ug-oMe"/>
+                            <constraint firstItem="Z6T-1Q-ilQ" firstAttribute="top" secondItem="RXt-E0-yxO" secondAttribute="top" constant="5" id="wha-X4-kBo"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -61,15 +85,24 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-            <point key="canvasLocation" x="-71.014492753623188" y="72.991071428571431"/>
+            <connections>
+                <outlet property="itemNameLbl" destination="y8c-Ox-Uue" id="Puq-MG-VrM"/>
+                <outlet property="quatityItemLabel" destination="Z6T-1Q-ilQ" id="3qc-wN-Qsg"/>
+                <outlet property="stackLable" destination="cIL-7Q-RKU" id="TbC-ta-Wok"/>
+                <outlet property="stackView" destination="JbF-uw-yYD" id="90Q-kV-xFw"/>
+            </connections>
+            <point key="canvasLocation" x="-85.507246376811594" y="33.482142857142854"/>
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="90949C">
+        <namedColor name="PrimaryLabelColorDefault">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryLblColor">
             <color red="0.56499999761581421" green="0.57999998331069946" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="UIViewColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

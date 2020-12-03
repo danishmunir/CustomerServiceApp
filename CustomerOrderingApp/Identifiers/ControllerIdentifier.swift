@@ -15,6 +15,18 @@ enum ControllerIdentifier: String {
     case FilterTableViewController
     case CatagoriesViewController
     case FastFoodViewController
+    case FoodDetailViewController
+    case BuisnessInformationTableViewController
+    case BasketViewController
+    case LoginTableViewController
+    case RegisterTableViewController
     
-    
+    //Account Storyboard
+    case NotesForBuisnessTableViewController
+    case NotesForDeliveryCourierTableViewController
+    case OrdersViewController
+    case EditAccountTableViewController
+    case WalletViewController
+    case AboutTableViewController
+    case MyAccountTableViewController
 }

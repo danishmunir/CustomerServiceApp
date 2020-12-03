@@ -13,7 +13,8 @@ extension UIViewController {
     
     func perpareNavigation(txtTitle: String, leftImage: UIImage?, rightImage: UIImage?) {
         prepareTitleView(str: txtTitle)
-        let leftButton = UIBarButtonItem(image: leftImage?.withRenderingMode(.alwaysOriginal), style: .plain, target: self , action: #selector(btnTapped))
+        let leftButton = UIBarButtonItem(image: leftImage?.withRenderingMode(.alwaysTemplate), style: .plain, target: self , action: #selector(btnTapped))
+        leftButton.tintColor = UIColor(named: "primaryColor")
         self.navigationItem.leftBarButtonItem = leftButton
         let rightButton = UIBarButtonItem(image: rightImage?.withRenderingMode(.alwaysOriginal), style: .plain, target: nil , action: nil)
         self.navigationItem.rightBarButtonItem = rightButton

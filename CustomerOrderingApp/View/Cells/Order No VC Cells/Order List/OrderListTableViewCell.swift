@@ -10,9 +10,17 @@ import UIKit
 
 class OrderListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var quatityItemLabel: UILabel!
+    @IBOutlet weak var itemNameLbl: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var stackLable: UILabel!
+    
+    var btnTapped: ((_ value: Int) -> (Void))?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -21,4 +29,12 @@ class OrderListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func seeMoreBtnTapped(sender: UIButton) {
+        if let btnTapped = self.btnTapped {
+            btnTapped(sender.tag)
+        }
+    }
+    
 }
+
+

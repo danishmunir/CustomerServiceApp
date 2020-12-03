@@ -16,6 +16,7 @@ class EnjoyOrderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = UIColor(named: "Background")
         perpareNavigation(txtTitle: "Order #(4335)", leftImage: UIImage(named: "Cross"), rightImage: UIImage(named: "QuestionMark"))
         
         cellIdentifiers.forEach { (identifier) in
@@ -49,7 +50,7 @@ extension EnjoyOrderViewController: UITableViewDelegate, UITableViewDataSource {
         let orderListCell = tableView.dequeueReusableCell(withIdentifier: "OrderListTableViewCell") as! OrderListTableViewCell
         if indexPath.section == 1 {
             defaultCell.textLabel?.text = "9 Longarace Road, Walthamshow, London, E17 4DT"
-            defaultCell.textLabel?.textColor = .black
+            defaultCell.textLabel?.textColor = UIColor(named: "PrimaryLabelColorDefault")
             defaultCell.textLabel?.font = UIFont(name: "Helvetica Neue", size: 13)
             return defaultCell
         } else if indexPath.section == 2 {
@@ -86,9 +87,12 @@ extension EnjoyOrderViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
-        myView.backgroundColor = UIColor(named: "F8F8FA")
-        
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
+        headerView.textLabel?.font = UIFont(name: "SFUIText-Medium", size: 12)
+        headerView.textLabel?.textColor = UIColor(named: "Default")
+        myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
     }
     

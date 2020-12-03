@@ -14,22 +14,68 @@ import Security
 class FoodDetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var buisnessViewTapped: UIView!
+    @IBOutlet weak var deliverdByBuisnessTapped: UIView!
+    
+    
     let label = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "PopularDealsTableViewCell", bundle: nil), forCellReuseIdentifier: "PopularDealsTableViewCell")
         textView.delegate = self
         
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
-        //        descriptionLabelSet()
+        
+        let buisnessViewClick = UITapGestureRecognizer(target: self, action: #selector(buisnessViewtap))
+        buisnessViewTapped.addGestureRecognizer(buisnessViewClick)
+        
+        perpareNavigation(txtTitle: "Phajja Siri paye", leftImage: UIImage(named: "Back"), rightImage: nil)
+        navigationOfVc()
+        
+        
+        let deliverdByBuisnessClick = UITapGestureRecognizer(target: self, action: #selector(deliverdbuisnessViewtap))
+        deliverdByBuisnessTapped.addGestureRecognizer(deliverdByBuisnessClick)
     }
+    
+    
+    func navigationOfVc() {
+        let search    = UIImage(named: "SearchRed")!
+         let share  = UIImage(named: "Share")!
+
+        let searchButton   = UIBarButtonItem(image: search,  style: .plain, target: self, action: #selector(searchBtnTapped))
+        let shareButton = UIBarButtonItem(image: share,  style: .plain, target: self, action: #selector(shareBtnTapped))
+
+         navigationItem.rightBarButtonItems = [searchButton, shareButton]
+    }
+    
+    @objc func deliverdbuisnessViewtap() {
+        
+    }
+    
+    @objc func searchBtnTapped() {
+        
+    }
+    @objc func shareBtnTapped() {
+        
+    }
+    
+    
+    @objc func buisnessViewtap() {
+        pushToController(from: .main, identifier: .BuisnessInformationTableViewController)
+    }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        navigationController?.navigationBar.isHidden = true
+//        //        descriptionLabelSet()
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        navigationController?.navigationBar.isHidden = false
+//    }
     
     
     func descriptionLabelSet(text: String) {
@@ -53,6 +99,11 @@ class FoodDetailViewController: UIViewController {
         //            self.descriptionLbl.addTrailing(with: "... ", moreText: "See more", moreTextFont: readmoreFont!, moreTextColor: readmoreFontColor)
         //        }
     }
+    
+    @IBAction func backBtnTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 
@@ -113,14 +164,13 @@ extension FoodDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.textColor = .black
-        
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
-        
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
         headerView.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
-        myView.backgroundColor = UIColor(named: "F8F8FA")
+        headerView.textLabel?.textColor = UIColor(named: "Default")
+        myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
-        
     }
     
 }

@@ -47,6 +47,7 @@ extension UIViewController {
     func pushToController(from name : Storyboard, identifier: ControllerIdentifier) {
         let storyboard = UIStoryboard(name: name.rawValue, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: identifier.rawValue)
+        
         navigationController?.pushViewController(vc,animated: true)
     }
 }

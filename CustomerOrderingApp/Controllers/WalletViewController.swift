@@ -14,8 +14,16 @@ class WalletViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.backgroundColor = UIColor(named: "Background")
         tableView.register(UINib(nibName: "PaymentMethodsTableViewCell", bundle: nil), forCellReuseIdentifier: "PaymentMethodsTableViewCell")
         perpareNavigation(txtTitle: "Wallet", leftImage: UIImage(named: "Back")!, rightImage: nil)
+        
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeBack))
+        view.addGestureRecognizer(swipe)
+    }
+    
+    @objc func swipeBack() {
+        navigationController?.popViewController(animated: true)
     }
     
 }
@@ -43,12 +51,18 @@ extension WalletViewController: UITableViewDelegate, UITableViewDataSource {
         let paymentCell = tableView.dequeueReusableCell(withIdentifier: "PaymentMethodsTableViewCell", for: indexPath) as! PaymentMethodsTableViewCell
         if indexPath.section == 0 {
             paymentCell.titleLabel.text = "Add a payment method"
+            paymentCell.cardExpiredLable.isHidden = true
+            paymentCell.imgView.isHidden = true
             paymentCell.titleLabel.textColor = UIColor(named: "primaryColor")
         }
-        else if indexPath.section == 1 {
-            paymentCell.NextImgView.isHidden = false
+        else  if indexPath.section == 1 {
+            paymentCell.accessoryType = .disclosureIndicator
+            if indexPath.row == 1 {
+                paymentCell.cardExpiredLable.isHidden = true
+            }
         }
         else if indexPath.section == 2 {
+            paymentCell.cardExpiredLable.isHidden = true
             if indexPath.row == 0 {
                 paymentCell.titleLabel.text = "Apple Pay"
                 
@@ -57,6 +71,8 @@ extension WalletViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
         else if indexPath.section == 3 {
+            paymentCell.cardExpiredLable.isHidden = true
+            paymentCell.imgView.isHidden = true
             paymentCell.titleLabel.text = "Codenamafive Cash"
             paymentCell.priceLabel.isHidden = false
         }
@@ -77,23 +93,22 @@ extension WalletViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return ""
+       if section == 1{
+            return  "   Payment methods"
+       } else {
+            return ""
+       }
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.textColor = .black
-        
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
-        
-        headerView.textLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
-        myView.backgroundColor = UIColor(named: "F8F8FA")
+        headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
+        headerView.textLabel?.font = UIFont(name: "SFUIText-Medium", size: 15)
+        headerView.textLabel?.textColor = UIColor(named: "Default")
+        myView.backgroundColor = UIColor(named: "Background")
         headerView.backgroundView = myView
-        if section == 0 {
-            headerView.textLabel?.text = ""
-        } else if section == 1{
-            headerView.textLabel?.text = "     Payment methods"
-        }
     }
     
 

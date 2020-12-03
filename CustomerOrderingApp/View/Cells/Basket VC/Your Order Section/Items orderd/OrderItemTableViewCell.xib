@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="OrderItemTableViewCell" customModule="CustomerOrderingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSi-g4-9gM">
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BK6-s2-7mo" customClass="RoundUIView" customModule="CustomerOrderingApp" customModuleProvider="target">
+                                <rect key="frame" x="25" y="14" width="22" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAD-hm-lfk">
+                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="UIViewCircleBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="CGh-cj-wOW"/>
+                                    <constraint firstItem="vAD-hm-lfk" firstAttribute="centerY" secondItem="BK6-s2-7mo" secondAttribute="centerY" id="HRG-Kl-zId"/>
+                                    <constraint firstItem="vAD-hm-lfk" firstAttribute="width" secondItem="BK6-s2-7mo" secondAttribute="width" id="IRH-JH-f7o"/>
+                                    <constraint firstItem="vAD-hm-lfk" firstAttribute="centerX" secondItem="BK6-s2-7mo" secondAttribute="centerX" id="ct0-wB-M5W"/>
+                                    <constraint firstAttribute="width" constant="22" id="mEb-aD-HqK"/>
+                                    <constraint firstItem="vAD-hm-lfk" firstAttribute="height" secondItem="BK6-s2-7mo" secondAttribute="height" id="q0r-5G-RdV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="UIViewCircleRadius"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coke 200ml" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8U-6w-fpS">
+                                <rect key="frame" x="57" y="16.5" width="81" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs. 300.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDT-jS-fRJ">
+                                <rect key="frame" x="329" y="14.5" width="72" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" name="PrimaryLabelColorDefault"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="UIViewColor"/>
+                        <constraints>
+                            <constraint firstItem="BK6-s2-7mo" firstAttribute="leading" secondItem="gSi-g4-9gM" secondAttribute="leading" constant="25" id="5hm-1e-KqB"/>
+                            <constraint firstItem="BK6-s2-7mo" firstAttribute="centerY" secondItem="gSi-g4-9gM" secondAttribute="centerY" id="7pr-Vk-SM5"/>
+                            <constraint firstAttribute="trailing" secondItem="FDT-jS-fRJ" secondAttribute="trailing" constant="25" id="aHs-dy-VxE"/>
+                            <constraint firstAttribute="height" constant="50" id="qOE-p6-8ww"/>
+                            <constraint firstItem="FDT-jS-fRJ" firstAttribute="centerY" secondItem="b8U-6w-fpS" secondAttribute="centerY" constant="-2" id="se6-ib-LVY"/>
+                            <constraint firstItem="b8U-6w-fpS" firstAttribute="centerY" secondItem="vAD-hm-lfk" secondAttribute="centerY" id="vvb-G7-cf4"/>
+                            <constraint firstItem="b8U-6w-fpS" firstAttribute="leading" secondItem="BK6-s2-7mo" secondAttribute="trailing" constant="10" id="wbP-y0-HUA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gSi-g4-9gM" secondAttribute="trailing" id="5Hw-Hj-GNy"/>
+                    <constraint firstAttribute="bottom" secondItem="gSi-g4-9gM" secondAttribute="bottom" id="Rim-0K-csB"/>
+                    <constraint firstItem="gSi-g4-9gM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jPP-OZ-gn1"/>
+                    <constraint firstItem="gSi-g4-9gM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wP7-2m-Uag"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="214.49275362318843" y="76.339285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryLabelColorDefault">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UIViewCircleBackground">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UIViewCircleRadius">
+            <color red="0.90588235294117647" green="0.9137254901960784" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UIViewColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

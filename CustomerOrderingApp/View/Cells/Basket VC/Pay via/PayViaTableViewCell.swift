@@ -1,14 +1,14 @@
 //
-//  RWithEmailTableViewCell.swift
+//  PayViaTableViewCell.swift
 //  CustomerOrderingApp
 //
-//  Created by M.Danish Arslan Munir on 25/09/2020.
+//  Created by Danish Munir on 17/11/2020.
 //  Copyright © 2020 Danish Munir. All rights reserved.
 //
 
 import UIKit
 
-class RWithEmailTableViewCell: UITableViewCell {
+class PayViaTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -20,6 +20,13 @@ extension UIImageView {
         image.layer.opacity = 0.5
         image.clipsToBounds = true
     }
+    func roundedImage() {
+        self.layer.borderWidth = 1
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.cornerRadius = self.frame.height / 2
+        self.clipsToBounds = true
+    }
     
     func applyshadowWithCorner(containerView : UIView, cornerRadious : CGFloat){
         containerView.clipsToBounds = false

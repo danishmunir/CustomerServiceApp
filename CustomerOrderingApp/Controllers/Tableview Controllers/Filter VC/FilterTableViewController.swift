@@ -68,7 +68,7 @@ extension FilterTableViewController {
     }
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel?.textColor = UIColor(named: "WhiteBackWithDark")
+        headerView.textLabel?.textColor = UIColor(named: "SectionsColor")
         let myView = UIView()
         headerView.textLabel?.text =  headerView.textLabel?.text?.capitalized
         headerView.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
